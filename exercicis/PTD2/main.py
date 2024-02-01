@@ -7,7 +7,8 @@ benvinguda(jugador)
 benvinguda()
 
 mostrarInstruccions()
-hola
+
+
 comensaJoc = False
 while comensaJoc == True:
     comensaJoc = mostrarMenu() #Tornarà vertader si comença i fals si s'acaba el joc
