@@ -41,8 +41,8 @@ Escrivim el nom en aquesta variable
 """
 #port = '/dev/ttyUSB0'
 #portChromebook = '/dev/ttyACM0'
-port = '/dev/cu.usbserial-1410'
-#portArduino ='/dev/cu.usbmodem14101'
+#port = '/dev/cu.usbserial-1410'
+port ='/dev/cu.usbmodem14101' #arduino
 #portBluetooth = '/dev/cu.Bluetooth-Incoming-Port'
 
 # 9600 ha de ser la mateixa velocitat que l'arduino
@@ -73,7 +73,7 @@ while True:
         print(lectura)
         #exemple: lectura = "1,Biel,440000,800,3.5"
 
-        print("-*10")
+        #print("-"*10)
 
         
 
