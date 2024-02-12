@@ -17,15 +17,11 @@ BAUD_RATE = 9600 # En bits per segon
 # En Windows serà COM: Ho podem veure a l'administrador de dispositius
 # També si obrim Arduino IDE ho veurem
 
-portAPC220 = '/dev/cu.usbserial-1420'
-portArduino ='/dev/cu.usbmodem14101'
-portBluetooth = '/dev/cu.Bluetooth-Incoming-Port'
+port = '/dev/cu.usbserial-1420' #APC220
+#port ='/dev/cu.usbmodem14101' #Arduino
+#port = '/dev/cu.Bluetooth-Incoming-Port' #Bluetooth
 
-
-#port_serie = serial.Serial(portAPC220, BAUD_RATE)
-port_serie = serial.Serial(portArduino, BAUD_RATE)
-#port_serie = serial.Serial(portBluetooth, BAUD_RATE)
-
+port_serie = serial.Serial(port, BAUD_RATE)
 
 time.sleep(0.5)
 if(port_serie.is_open):

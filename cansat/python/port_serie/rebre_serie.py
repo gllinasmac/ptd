@@ -11,7 +11,8 @@ Instal·lar llibreria pyserial
 
 Obrir una terminal i executar:
 sudo apt install python3-pip
-pip install pyserial --break-system-packages
+pip install pyserial
+Si no funciona: pip install pyserial --break-system-packages
 
 https://github.com/pyserial/pyserial
 """
