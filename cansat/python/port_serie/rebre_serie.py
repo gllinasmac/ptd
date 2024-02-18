@@ -52,6 +52,7 @@ port_serie = Serial(port, 9600)
 
 if(port_serie.is_open):
     print(f"Connexió establerta a {port_serie.name}")
+    print("Esperant dades")
 
 while True:
     #port_serie.write(b'hola')
