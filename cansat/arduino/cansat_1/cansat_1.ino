@@ -27,6 +27,7 @@ SoftwareSerial ss(RXPin, TXPin);
 
 Adafruit_BMP280 bmp;              // I2C
 float PRESSIO_ALTURA_0 = 1032.0;  //Ajustar el dia de la mesura
+float ALTURA_0 = 16;
 
 int num_paquet = 0;
 
@@ -77,16 +78,32 @@ void loop() {
   Serial.print(",");
   Serial.print(pressio);
   Serial.print(",");
+  Serial.print(altura_bmp280 + ALTURA_0);
+  Serial.print(",");
   Serial.print(temperatura_bmp280);
   Serial.print(",");
-  Serial.print(altura_bmp280);
-  Serial.print(",");
   Serial.print(lectura_ir);
-  Serial.print(",");
+  
 
   while (ss.available() > 0) {
     if (gps.encode(ss.read())) {
       if (gps.location.isValid()) {
+        Serial.print(",");
+        Serial.print(gps.date.day());
+        Serial.print("/");
+        Serial.print(gps.date.month());
+        Serial.print("/");
+        Serial.print(gps.date.year());
+
+        Serial.print(",");
+        Serial.print(gps.time.hour()+1);
+        Serial.print(":");
+        Serial.print(gps.time.minute());
+        Serial.print(":");
+        Serial.print(gps.time.second());
+
+        Serial.print(",");
+
         Serial.print(gps.location.lat(), 6);
         Serial.print(F(","));
         Serial.print(gps.location.lng(), 6);
@@ -94,8 +111,6 @@ void loop() {
         Serial.print(gps.altitude.meters());
         Serial.print(",");
         Serial.print(gps.speed.kmph());
-      } else {
-        Serial.print(F("-,-,-,-"));
       }
     }
   }

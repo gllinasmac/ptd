@@ -1,5 +1,6 @@
-from serial import *
-from time import *
+import serial
+import time
+import simplekml
 import math
 
 """
@@ -21,7 +22,10 @@ T0 = 298.15 #Kelvin
 """
 Fitxer de text
 """
-nom_fitxer = "cansat1.csv"
+nom_fitxer_sensors = "cansat1_sensors.csv"
+nom_fitxer_calculs = "cansat1_calculs.csv"
+nom_fitxer_gps = "cansat1_gps.csv"
+nom_fitxer_google_earth = "cansat1_trajectoria.kml"
 
 """
 Esbrinar el nom del port USB on hi ha connectat l'APC220
@@ -35,19 +39,44 @@ En Windows serà COM: ho podem veure a l'administrador de dispositivius
 
 #port ='/dev/cu.usbmodem14101' #Arduino
 port ='/dev/cu.usbserial-1410' #APC220
+port_serie = serial.Serial(port, 9600)
 
+"""
+Google Earth
+"""
+kml = simplekml.Kml()
+coordenades_trajectoria = []
 
-port_serie = Serial(port, 9600)
-altura_anterior_formula = 0
-altura_anterior_bmp280 = 0
+trajectoria = kml.newlinestring(name="Cansat", 
+                               description="Trajectòria cansat")
+
+trajectoria.altitudemode = simplekml.AltitudeMode.absolute #relativetoground
+trajectoria.style.linestyle.width = 3
+trajectoria.style.linestyle.color = simplekml.Color.red
+trajectoria.extrude = 1
+#trajectoria.polystyle.fill = 0
+trajectoria.polystyle.color = simplekml.Color.hexa("ff000050")
+trajectoria.linestyle.gxlabelvisibility = 1
+
+altitud_anterior_formula = 0
+altitud_anterior_bmp280 = 0
 velocitat_formula = 0
 velocitat_bmp280 = 0
+temperatura_model_teoric = 0
+temperatura_model_experimental = 0
 
 if(port_serie.is_open):
     print(f"Connexió establerta a {port_serie.name}")
-    with open(nom_fitxer, 'a') as file_object:
-        file_object.write("Paquet, Equip, Pressió, Altura (BMP280), Altura (Fórmula), Velocitat(BMP280), Velocitat (Fórmula), Lectura termistor, Temperatura model teòric, Temperatura model experimental, Temperatura (BMP280)")
+    with open(nom_fitxer_calculs, 'a') as file_object:
+        file_object.write("Paquet, Equip, Pressió, Altura (BMP280), Altura (Fórmula), Velocitat(BMP280), Velocitat (Fórmula), Lectura termistor, Temperatura model teòric, Temperatura model experimental, Temperatura (BMP280)\n")
     
+    with open(nom_fitxer_sensors, 'a') as file_object:
+        file_object.write("Paquet, Equip, Lectura termistor, Pressió, Altitud BMP280, Temperatura BMP280, Lectura IR\n")
+    
+    with open(nom_fitxer_gps, 'a') as file_object:
+        file_object.write(f"Dia,Hora,Longitud,Latitud,Altitud,Velocitat\n")
+    
+
     print("Esperant dades:")
 
 while True:
@@ -55,36 +84,60 @@ while True:
         lectura = port_serie.readline()
         lectura = lectura.decode('Ascii')
         lectura = lectura.rstrip("\r\n'")    
-        #print(lectura)
+        print(lectura)
     
         dades = lectura.split(',')
-
+        
+        # Guardam dades en variables
         num_paquet = dades[0]
         nom_equip = dades[1]
-        pressio = dades[2]
-        lectura_termistor = dades[3]
-        altura_bmp280 = dades[4]
-        temperatura_bmp280 = dades[5]
+        lectura_termistor = int(dades[2])
+        pressio = float(dades[3])
+        altitud_bmp280 = float(dades[4])
+        temperatura_bmp280 = float(dades[5])
+        lectura_ir = int(dades[6])
 
-        altura_formula = h0 + (math.log(p0/pressio)*R_AST*t0)/(G*M_MOLAR)
+        with open(nom_fitxer_sensors, 'a') as file_object:
+            file_object.write(f"{num_paquet},{nom_equip},{lectura_termistor},{pressio},{altitud_bmp280},{temperatura_bmp280},{lectura_ir}\n")
 
-        if(altura_anterior_formula != 0):
-            velocitat_formula = altura_anterior_formula - altura_formula
+        if len(dades) > 7:
+            dia = dades[7]
+            hora = dades[8]
+            latitud = float(dades[9])
+            longitud = float(dades[10])
+            altitud_gps = float(dades[11])
+            velocitat_horitzontal_gps = float(dades[12]) #km/h
 
-        if(altura_anterior_bmp280 != 0):
-            velocitat_bmp280 = altura_anterior_bmp280 - altura_bmp280
+            with open(nom_fitxer_gps, 'a') as file_object:
+                file_object.write(f"{dia},{hora},{latitud},{longitud},{altitud_gps},{velocitat_horitzontal_gps}\n")
+
+            coordenades_trajectoria.append((longitud,latitud,altitud_gps))
+            trajectoria.coords = coordenades_trajectoria
+            kml.save(nom_fitxer_google_earth)
+
+        #Calculam altura amb fórmula de pressió
+        altitud_formula = h0 + (math.log(p0/pressio)*R_AST*t0)/(G*M_MOLAR)
+
+        #Càlcul velocitat a partir altura
+        if(altitud_anterior_formula != 0):
+            velocitat_formula = altitud_anterior_formula - altitud_formula
+
+        if(altitud_anterior_bmp280 != 0):
+            velocitat_bmp280 = altitud_anterior_bmp280 - altitud_bmp280
         
-        altura_anterior_formula = altura_formula
-        altura_anterior_bmp280 = altura_bmp280
+        altitud_anterior_formula = altitud_formula
+        altitud_anterior_bmp280 = altitud_bmp280
 
-        Vm = VCC * lectura_termistor / 1023.0
-        R = R_AUX / ((VCC / Vm)-1)
-        temperatura_model_teoric = BETA / (math.log(R/R_AUX)+(BETA / T0)) - 273.15
-        temperatura_model_experimental = 0
+        # Càlcul temperatura a partir de lectura termistor
+        if(lectura_termistor != 0):
+            Vm = VCC * lectura_termistor / 1023.0
+            R = R_AUX / ((VCC / Vm)-1)
+            temperatura_model_teoric = BETA / (math.log(R/R_AUX)+(BETA / T0)) - 273.15
+            temperatura_model_experimental = 0
 
 
-        with open(nom_fitxer, 'a') as file_object:
-            file_object.write(f"{num_paquet},{nom_equip},{pressio},{altura_bmp280},{altura_formula},{velocitat_bmp280},{velocitat_formula},{lectura_termistor},{temperatura_model_teoric},{temperatura_model_experimental},{temperatura_bmp280}")
-
+        with open(nom_fitxer_calculs, 'a') as file_object:
+            file_object.write(f"{num_paquet},{nom_equip},{pressio},{altitud_bmp280},{round(altitud_formula,2)},{round(velocitat_bmp280,2)},{velocitat_formula},{lectura_termistor},{temperatura_model_teoric},{round(temperatura_model_experimental)},{temperatura_bmp280}\n")
+        
 port_serie.close() # Tanca el port
 
