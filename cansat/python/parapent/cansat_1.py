@@ -33,9 +33,11 @@ ls /dev/tty*
 En Windows serà COM: ho podem veure a l'administrador de dispositivius
 """
 
-portUSB ='/dev/cu.usbmodem14101' #Escrivim el nom del port USB
+#port ='/dev/cu.usbmodem14101' #Arduino
+port ='/dev/cu.usbserial-1410' #APC220
 
-port_serie = Serial(portUSB, 9600)
+
+port_serie = Serial(port, 9600)
 altura_anterior_formula = 0
 altura_anterior_bmp280 = 0
 velocitat_formula = 0

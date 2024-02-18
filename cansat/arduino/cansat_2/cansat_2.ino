@@ -9,13 +9,13 @@ const int TEMPS_ENTRE_DADES = 1000;  //Delay entre el final en ms
 
 const int PIN_IR = 6;                ////Digital
 
-const int PIN_RGB_VERMELL = 5;       //Digital
-const int PIN_RGB_BLAU = 8;          //Digital
-const int PIN_RGB_VERD = 2;          //Digital
+const int PIN_RGB_VERMELL = 2;       //Digital
+const int PIN_RGB_BLAU = 5;          //Digital
+const int PIN_RGB_VERD = 8;          //Digital
 
 const int PIN_BRUNZIDOR = 11;         //Digital
-const int FREQ_BRUNZIDOR = 400;
-const int TEMPS_BRUNZIDOR = 1000;
+const int FREQ_BRUNZIDOR = 260;
+const int TEMPS_BRUNZIDOR = 700;
 
 const int PIN_TERMISTOR = 2;         //Analògic
 
@@ -33,34 +33,27 @@ int num_paquet = 0;
 void setup() {
   Serial.begin(BAUDS_PER_SEGON);
   ss.begin(GPSBaud);
-  
 
   //TEST FUNCIONAMENT BMP280
   while (!Serial) delay(100);
   unsigned status;
   status = bmp.begin();
-  /*
   if (!status) {
     Serial.println("Error de connexió BMP280");
     while (1) delay(10);
   }
-  */
+
   pinMode(PIN_IR, INPUT);
   pinMode(PIN_BRUNZIDOR, OUTPUT);
   pinMode(PIN_RGB_VERMELL, OUTPUT);
   pinMode(PIN_RGB_VERD, OUTPUT);
   pinMode(PIN_RGB_BLAU, OUTPUT);
-
-  //digitalWrite(PIN_RGB_VERMELL,HIGH);
-  
 }
 
 void loop() {
 
-  tone(PIN_BRUNZIDOR,FREQ_BRUNZIDOR);
-  delay(250);
-  noTone(PIN_BRUNZIDOR);
-  
+  tone(PIN_BRUNZIDOR,FREQ_BRUNZIDOR,TEMPS_BRUNZIDOR);
+
   int lectura_ir = digitalRead(PIN_IR);
   int lectura_termistor = analogRead(PIN_TERMISTOR);
   float pressio = bmp.readPressure();
@@ -102,21 +95,19 @@ void loop() {
   Serial.println();
 
   num_paquet++;
-  
-  if(lectura_ir == HIGH){
-    digitalWrite(PIN_RGB_VERMELL, LOW);
-    digitalWrite(PIN_RGB_VERD, LOW);
-    digitalWrite(PIN_RGB_BLAU, LOW);
+
+  if(lectura_ir == LOW){
+    digitalWrite(PIN_RGB_VERMELL, 0);
+    digitalWrite(PIN_RGB_VERD, 255);
+    digitalWrite(PIN_RGB_BLAU, 0);
   }else {
-    digitalWrite(PIN_RGB_VERMELL, LOW);
-    digitalWrite(PIN_RGB_VERD, HIGH);
-    digitalWrite(PIN_RGB_BLAU, LOW);
+    digitalWrite(PIN_RGB_VERMELL, 0);
+    digitalWrite(PIN_RGB_VERD, 0);
+    digitalWrite(PIN_RGB_BLAU, 255);
   }
-  
-  
+
   smartDelay(TEMPS_ENTRE_DADES);
   //delay(TEMPS_ENTRE_DADES);
-  
   }
 
   // This custom version of delay() ensures that the gps object
