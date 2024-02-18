@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <Style id="4">
+            <LineStyle id="5">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <width>3</width>
+                <gx:labelVisibility>1</gx:labelVisibility>
+            </LineStyle>
+            <PolyStyle id="6">
+                <color>500000ff</color>
+                <colorMode>normal</colorMode>
+                <fill>1</fill>
+                <outline>1</outline>
+            </PolyStyle>
+        </Style>
+        <Placemark id="3">
+            <name>Cansat1</name>
+            <description>Trajectòria cansat</description>
+            <styleUrl>#4</styleUrl>
+            <LineString id="2">
+                <extrude>1</extrude>
+                <altitudeMode>absolute</altitudeMode>
+                <coordinates>3.838603,40.001289,100 3.831694,39.999645,50</coordinates>
+            </LineString>
+        </Placemark>
+    </Document>
+</kml>
