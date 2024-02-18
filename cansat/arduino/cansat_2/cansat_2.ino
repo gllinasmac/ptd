@@ -8,11 +8,12 @@
 const int BAUDS_PER_SEGON = 9600;    //Baud = nombre de símbols (9600 = 9600 símbols enviats cada segon)
 const int TEMPS_ENTRE_DADES = 1000;  //Delay entre el final en ms
 
-const int PIN_MQ135 = 3;
-const int PIN_UV = 0;
+const int PIN_MQ135 = A3;
+const int PIN_UV = A0;
 
-const int PIN_TERMISTOR = 2;         //Analògic
+const int PIN_TERMISTOR = A2;
 const int PIN_DHT = 7
+
 DHT11 dht11(PIN_DHT);
 
 static const int RXPin = 4, TXPin = 3;
@@ -50,18 +51,16 @@ void loop() {
   float pressio = bmp.readPressure();
   float temperatura_bmp280 = bmp.readTemperature();
 
-  int temperatura_dht = 0;
-  int humitat = 0;
+  int temperatura_dht = dht.getTemperature();
+  int humitat = dht.getHumidity();;
 
-    // Attempt to read the temperature and humidity values from the DHT11 sensor.
-    int result = dht11.readTemperatureHumidity(temperatura_dht, humitat);
   //  altitude = 44330 * (1.0 - pow(pressure / seaLevelhPa, 0.1903));
 
   float altura_bmp280 = bmp.readAltitude(PRESSIO_ALTURA_0);
 
   Serial.print(num_paquet);
   Serial.print(",");
-  Serial.print("Alicia Sintes");
+  Serial.print("Sara Garcia");
   Serial.print(",");
   Serial.print(lectura_termistor);
   Serial.print(",");
@@ -71,51 +70,21 @@ void loop() {
   Serial.print(",");
   Serial.print(altura_bmp280);
   Serial.print(",");
-  Serial.print(temperatura_bmp280);
+  Serial.print(temperatura_dht);
   Serial.print(",");
   Serial.print(humitat);
 
-  while (ss.available() > 0) {
-    if (gps.encode(ss.read())) {
-      if (gps.location.isValid()) {
-        Serial.print(",")
-        Serial.print(gps.location.lat(), 6);
-        Serial.print(F(","));
-        Serial.print(gps.location.lng(), 6);
-        Serial.print(",");
-        Serial.print(gps.altitude.meters());
-        Serial.print(",");
-        Serial.print(gps.speed.kmph());
-      } else {
-        Serial.print(F("-,-,-,-"));
-      }
-    }
-  }
+
   
+  float mq135_voltaje = mq135_adc * (5.0 / 1023.0);
+  float mq135_resistencia = 1000*((5-mq135_voltaje)/mq135_voltaje);
+  double dioxidoDeCarbono = 245*pow(mq135_resistencia/5463, -2.26);
+  double oxidosDeNitrogeno = 132.6*pow(mq135_resistencia/5463, -2.74);
+  double amoniaco = 161.7*pow(mq135_resistencia/5463, -2.26);
+
   Serial.println();
 
   num_paquet++;
 
-  if(lectura_ir == LOW){
-    digitalWrite(PIN_RGB_VERMELL, 0);
-    digitalWrite(PIN_RGB_VERD, 255);
-    digitalWrite(PIN_RGB_BLAU, 0);
-  }else {
-    digitalWrite(PIN_RGB_VERMELL, 0);
-    digitalWrite(PIN_RGB_VERD, 0);
-    digitalWrite(PIN_RGB_BLAU, 255);
-  }
-
-  smartDelay(TEMPS_ENTRE_DADES);
-  //delay(TEMPS_ENTRE_DADES);
-  }
-
-  // This custom version of delay() ensures that the gps object
-  // is being "fed".
-  static void smartDelay(unsigned long ms) {
-    unsigned long start = millis();
-    do {
-      while (ss.available())
-        gps.encode(ss.read());
-    } while (millis() - start < ms);
+  delay(TEMPS_ENTRE_DADES);
   }

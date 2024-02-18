@@ -17,7 +17,7 @@ const int PIN_BRUNZIDOR = 11;         //Digital
 const int FREQ_BRUNZIDOR = 400;
 const int TEMPS_BRUNZIDOR = 1000;
 
-const int PIN_TERMISTOR = 2;         //Analògic
+const int PIN_TERMISTOR = A2;         //Analògic
 
 static const int RXPin = 4, TXPin = 3;
 static const uint32_t GPSBaud = 9600;
@@ -58,9 +58,9 @@ void setup() {
 
 void loop() {
 
-  tone(PIN_BRUNZIDOR,FREQ_BRUNZIDOR);
-  delay(250);
-  noTone(PIN_BRUNZIDOR);
+  //tone(PIN_BRUNZIDOR,FREQ_BRUNZIDOR);
+  //delay(250);
+  //noTone(PIN_BRUNZIDOR);
   
   int lectura_ir = digitalRead(PIN_IR);
   int lectura_termistor = analogRead(PIN_TERMISTOR);
@@ -114,6 +114,7 @@ void loop() {
       }
     }
   }
+
   Serial.println();
 
   num_paquet++;
