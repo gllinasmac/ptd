@@ -40,7 +40,7 @@ altura_anterior_formula = 0
 altura_anterior_bmp280 = 0
 velocitat_formula = 0
 velocitat_bmp280 = 0
-d
+
 if(port_serie.is_open):
     print(f"Connexió establerta a {port_serie.name}")
     with open(nom_fitxer, 'a') as file_object:
@@ -85,3 +85,4 @@ while True:
             file_object.write(f"{num_paquet},{nom_equip},{pressio},{altura_bmp280},{altura_formula},{velocitat_bmp280},{velocitat_formula},{lectura_termistor},{temperatura_model_teoric},{temperatura_model_experimental},{temperatura_bmp280}")
 
 port_serie.close() # Tanca el port
+

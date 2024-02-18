@@ -42,8 +42,8 @@ Escrivim el nom en aquesta variable
 """
 #port = '/dev/ttyUSB0'
 #portChromebook = '/dev/ttyACM0'
-port = '/dev/cu.usbserial-1410' # apc220
-#port ='/dev/cu.usbmodem14101' #arduino
+#port = '/dev/cu.usbserial-1410'
+port ='/dev/cu.usbmodem14101' #arduino
 #portBluetooth = '/dev/cu.Bluetooth-Incoming-Port'
 
 # 9600 ha de ser la mateixa velocitat que l'arduino
@@ -52,7 +52,6 @@ port_serie = Serial(port, 9600)
 
 if(port_serie.is_open):
     print(f"Connexió establerta a {port_serie.name}")
-    print("Esperant dades...")
 
 while True:
     #port_serie.write(b'hola')
