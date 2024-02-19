@@ -68,10 +68,10 @@ temperatura_model_experimental = 0
 if(port_serie.is_open):
     print(f"Connexió establerta a {port_serie.name}")
     with open(nom_fitxer_calculs, 'a') as file_object:
-        file_object.write("Paquet, Equip, Pressió, Altura (BMP280), Altura (Fórmula), Velocitat(BMP280), Velocitat (Fórmula), Lectura termistor, Temperatura model teòric, Temperatura model experimental, Temperatura (BMP280)\n")
+        file_object.write("Paquet, Temps cansat, Equip, Pressió, Altura (BMP280), Altura (Fórmula), Velocitat(BMP280), Velocitat (Fórmula), Lectura termistor, Temperatura model teòric, Temperatura model experimental, Temperatura (BMP280)\n")
     
     with open(nom_fitxer_sensors, 'a') as file_object:
-        file_object.write("Paquet, Equip, Lectura termistor, Pressió, Altitud BMP280, Temperatura BMP280, Lectura IR\n")
+        file_object.write("Paquet, Temps cansat, Equip, Lectura termistor, Pressió, Altitud BMP280, Temperatura BMP280, Lectura IR\n")
     
     with open(nom_fitxer_gps, 'a') as file_object:
         file_object.write(f"Dia,Hora,Longitud,Latitud,Altitud,Velocitat\n")
@@ -90,23 +90,24 @@ while True:
         
         # Guardam dades en variables
         num_paquet = dades[0]
-        nom_equip = dades[1]
-        lectura_termistor = int(dades[2])
-        pressio = float(dades[3])
-        altitud_bmp280 = float(dades[4])
-        temperatura_bmp280 = float(dades[5])
-        lectura_ir = int(dades[6])
+        temps_cansat = dades[1]
+        nom_equip = dades[2]
+        lectura_termistor = int(dades[3])
+        pressio = float(dades[4])
+        altitud_bmp280 = float(dades[5])
+        temperatura_bmp280 = float(dades[6])
+        lectura_ir = int(dades[7])
 
         with open(nom_fitxer_sensors, 'a') as file_object:
-            file_object.write(f"{num_paquet},{nom_equip},{lectura_termistor},{pressio},{altitud_bmp280},{temperatura_bmp280},{lectura_ir}\n")
+            file_object.write(f"{num_paquet},{temps_cansat},{nom_equip},{lectura_termistor},{pressio},{altitud_bmp280},{temperatura_bmp280},{lectura_ir}\n")
 
-        if len(dades) > 7:
-            dia = dades[7]
-            hora = dades[8]
-            latitud = float(dades[9])
-            longitud = float(dades[10])
-            altitud_gps = float(dades[11])
-            velocitat_horitzontal_gps = float(dades[12]) #km/h
+        if len(dades) > 8:
+            dia = dades[8]
+            hora = dades[9]
+            latitud = float(dades[10])
+            longitud = float(dades[11])
+            altitud_gps = float(dades[12])
+            velocitat_horitzontal_gps = float(dades[13]) #km/h
 
             with open(nom_fitxer_gps, 'a') as file_object:
                 file_object.write(f"{dia},{hora},{latitud},{longitud},{altitud_gps},{velocitat_horitzontal_gps}\n")
@@ -137,7 +138,7 @@ while True:
 
 
         with open(nom_fitxer_calculs, 'a') as file_object:
-            file_object.write(f"{num_paquet},{nom_equip},{pressio},{altitud_bmp280},{round(altitud_formula,2)},{round(velocitat_bmp280,2)},{velocitat_formula},{lectura_termistor},{temperatura_model_teoric},{round(temperatura_model_experimental)},{temperatura_bmp280}\n")
+            file_object.write(f"{num_paquet},{temps_cansat},{nom_equip},{pressio},{altitud_bmp280},{round(altitud_formula,2)},{round(velocitat_bmp280,2)},{velocitat_formula},{lectura_termistor},{temperatura_model_teoric},{round(temperatura_model_experimental)},{temperatura_bmp280}\n")
         
 port_serie.close() # Tanca el port
 

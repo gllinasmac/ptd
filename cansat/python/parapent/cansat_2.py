@@ -48,10 +48,10 @@ temperatura_model_experimental = 0
 if(port_serie.is_open):
     print(f"Connexió establerta a {port_serie.name}")
     with open(nom_fitxer_calculs, 'a') as file_object:
-        file_object.write("Paquet, Equip, Pressió, Altura (BMP280), Altura (Fórmula), Velocitat(BMP280), Velocitat (Fórmula), Lectura termistor, Temperatura model teòric, Temperatura model experimental, Temperatura (BMP280)\n")
+        file_object.write("Paquet, Equip, Pressió, Altura (BMP280), Altura (Fórmula), Velocitat(BMP280), Velocitat (Fórmula), Lectura termistor, Temperatura model teòric, Temperatura model experimental, Temperatura (BMP280), Temperatura (DHT11), Humitat, Diòxid de carboni, Òxid de nitrògen, Amoníac, UV\n")
     
     with open(nom_fitxer_sensors, 'a') as file_object:
-        file_object.write("Paquet, Equip, Lectura termistor, Pressió, Altitud BMP280, Temperatura BMP280, Humitat, Lectura MQ135, Lectura UV \n")
+        file_object.write("Paquet, Equip, Lectura termistor, Pressió, Altitud BMP280, Temperatura BMP280, Temperatura DHT11, Humitat, Lectura MQ135, Lectura UV \n")
     
 
     print("Esperant dades:")
@@ -67,30 +67,19 @@ while True:
         
         # Guardam dades en variables
         num_paquet = dades[0]
-        nom_equip = dades[1]
-        lectura_termistor = int(dades[2])
-        pressio = float(dades[3])
-        altitud_bmp280 = float(dades[4])
-        temperatura_bmp280 = float(dades[5])
-        lectura_ir = int(dades[6])
+        temps_cansat = int(dades[1])
+        nom_equip = dades[2]
+        lectura_termistor = int(dades[3])
+        pressio = float(dades[4])
+        altitud_bmp280 = float(dades[5])
+        temperatura_bmp280 = float(dades[6])
+        temperatura_dht11 = float(dades[7])
+        humitat = int(dades[8])
+        lectura_mq135 = int(dades[9])
+        lectura_uv = int(dades[10])
 
         with open(nom_fitxer_sensors, 'a') as file_object:
-            file_object.write(f"{num_paquet},{nom_equip},{lectura_termistor},{pressio},{altitud_bmp280},{temperatura_bmp280},{lectura_ir}\n")
-
-        if len(dades) > 7:
-            dia = dades[7]
-            hora = dades[8]
-            latitud = float(dades[9])
-            longitud = float(dades[10])
-            altitud_gps = float(dades[11])
-            velocitat_horitzontal_gps = float(dades[12]) #km/h
-
-            with open(nom_fitxer_gps, 'a') as file_object:
-                file_object.write(f"{dia},{hora},{latitud},{longitud},{altitud_gps},{velocitat_horitzontal_gps}\n")
-
-            coordenades_trajectoria.append((longitud,latitud,altitud_gps))
-            trajectoria.coords = coordenades_trajectoria
-            kml.save(nom_fitxer_google_earth)
+            file_object.write(f"{num_paquet},{nom_equip},{lectura_termistor},{pressio},{altitud_bmp280},{temperatura_bmp280},{temperatura_dht11},{humitat},{lectura_mq135},{lectura_uv}\n")
 
         #Calculam altura amb fórmula de pressió
         altitud_formula = h0 + (math.log(p0/pressio)*R_AST*t0)/(G*M_MOLAR)
@@ -112,9 +101,15 @@ while True:
             temperatura_model_teoric = BETA / (math.log(R/R_AUX)+(BETA / T0)) - 273.15
             temperatura_model_experimental = 0
 
-
+        # Càlculs del sensor de qualitat d'aire
+        mq135_voltaje = lectura_mq135 * (5.0 / 1023.0)
+        mq135_resistencia = 1000*((5-mq135_voltaje)/mq135_voltaje)
+        dioxid_de_carboni = 245*pow(mq135_resistencia/5463, -2.26)
+        oxid_de_nitrogen = 132.6*pow(mq135_resistencia/5463, -2.74)
+        amoniac = 161.7*pow(mq135_resistencia/5463, -2.26)
+        
         with open(nom_fitxer_calculs, 'a') as file_object:
-            file_object.write(f"{num_paquet},{nom_equip},{pressio},{altitud_bmp280},{round(altitud_formula,2)},{round(velocitat_bmp280,2)},{velocitat_formula},{lectura_termistor},{temperatura_model_teoric},{round(temperatura_model_experimental)},{temperatura_bmp280}\n")
+            file_object.write(f"{num_paquet},{nom_equip},{pressio},{altitud_bmp280},{round(altitud_formula,2)},{round(velocitat_bmp280,2)},{velocitat_formula},{lectura_termistor},{temperatura_model_teoric},{round(temperatura_model_experimental)},{temperatura_bmp280}, {temperatura_dht11},{humitat},{dioxid_de_carboni},{oxid_de_nitrogen},{amoniac},{lectura_uv}\n")
         
 port_serie.close() # Tanca el port
 

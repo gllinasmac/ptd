@@ -1,8 +1,11 @@
 #include <Wire.h>
 #include <SPI.h>
 #include <Adafruit_BMP280.h>
+/*
 #include <TinyGPSPlus.h>
 #include <SoftwareSerial.h>
+*/
+
 
 const int BAUDS_PER_SEGON = 9600;    //Baud = nombre de símbols (9600 = 9600 símbols enviats cada segon)
 const int TEMPS_ENTRE_DADES = 1000;  //Delay entre el final en ms
@@ -19,12 +22,12 @@ const int TEMPS_BRUNZIDOR = 1000;
 
 const int PIN_TERMISTOR = A2;         //Analògic
 
+/*
 static const int RXPin = 4, TXPin = 3;
-static const uint32_t GPSBaud = 9600;
+static const uint32_t GPSBaud = BAUDS_PER_SEGON;
 TinyGPSPlus gps;
-
 SoftwareSerial ss(RXPin, TXPin);
-
+*/
 Adafruit_BMP280 bmp;              // I2C
 float PRESSIO_ALTURA_0 = 1032.0;  //Ajustar el dia de la mesura
 float ALTURA_0 = 16;
@@ -33,7 +36,8 @@ int num_paquet = 0;
 
 void setup() {
   Serial.begin(BAUDS_PER_SEGON);
-  ss.begin(GPSBaud);
+  
+  //ss.begin(GPSBaud);
   
 
   //TEST FUNCIONAMENT BMP280
@@ -58,9 +62,7 @@ void setup() {
 
 void loop() {
 
-  //tone(PIN_BRUNZIDOR,FREQ_BRUNZIDOR);
-  //delay(250);
-  //noTone(PIN_BRUNZIDOR);
+  
   
   int lectura_ir = digitalRead(PIN_IR);
   int lectura_termistor = analogRead(PIN_TERMISTOR);
@@ -72,19 +74,21 @@ void loop() {
 
   Serial.print(num_paquet);
   Serial.print(",");
+  Serial.print(millis()); //Milisegons
+  Serial.print(",");
   Serial.print("Alicia Sintes");
   Serial.print(",");
   Serial.print(lectura_termistor);
   Serial.print(",");
   Serial.print(pressio);
   Serial.print(",");
-  Serial.print(altura_bmp280 + ALTURA_0);
+  Serial.print(altura_bmp280);
   Serial.print(",");
   Serial.print(temperatura_bmp280);
   Serial.print(",");
   Serial.print(lectura_ir);
   
-
+  /*
   while (ss.available() > 0) {
     if (gps.encode(ss.read())) {
       if (gps.location.isValid()) {
@@ -113,6 +117,7 @@ void loop() {
         Serial.print(gps.speed.kmph());
       }
     }
+    */
   }
 
   Serial.println();
@@ -130,8 +135,9 @@ void loop() {
   }
   
   
-  smartDelay(TEMPS_ENTRE_DADES);
-  //delay(TEMPS_ENTRE_DADES);
+  //tone(PIN_BRUNZIDOR,FREQ_BRUNZIDOR);
+  //delay(250);
+  //noTone(PIN_BRUNZIDOR);
   
   }
 

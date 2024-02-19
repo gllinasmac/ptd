@@ -55,6 +55,8 @@ void loop() {
 
   Serial.print(num_paquet);
   Serial.print(",");
+  Serial.print(millis());
+  Serial.print(",");
   Serial.print("Sara Garcia");
   Serial.print(",");
   Serial.print(lectura_termistor);
@@ -69,13 +71,11 @@ void loop() {
   Serial.print(",");
   Serial.print(humitat);
   Serial.print(",");
-  Serial.print(lectura_uv);
-  Serial.print(",");
   Serial.print(lectura_mq135);
 
 
 
-  float mq135_voltaje = lectura_mq135 * (5.0 / 1023.0);
+  float mq135_voltaje = lectura_mq135 * (5.0 / 1023.0)
   float mq135_resistencia = 1000*((5-mq135_voltaje)/mq135_voltaje);
   double dioxidoDeCarbono = 245*pow(mq135_resistencia/5463, -2.26);
   double oxidosDeNitrogeno = 132.6*pow(mq135_resistencia/5463, -2.74);
@@ -86,6 +86,8 @@ void loop() {
   Serial.print(oxidosDeNitrogeno);
   Serial.print(",");
   Serial.print(amoniaco);
+  Serial.print(",");
+  Serial.print(lectura_uv);
   Serial.println();
 
   num_paquet++;
