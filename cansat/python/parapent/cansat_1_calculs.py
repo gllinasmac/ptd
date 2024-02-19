@@ -1,6 +1,5 @@
 import serial
 import time
-import simplekml
 import math
 
 """
@@ -25,7 +24,6 @@ Fitxer de text
 nom_fitxer_sensors = "cansat1_sensors.csv"
 nom_fitxer_calculs = "cansat1_calculs.csv"
 nom_fitxer_gps = "cansat1_gps.csv"
-nom_fitxer_google_earth = "cansat1_trajectoria.kml"
 
 """
 Esbrinar el nom del port USB on hi ha connectat l'APC220
@@ -41,30 +39,6 @@ En Windows serà COM: ho podem veure a l'administrador de dispositivius
 port ='/dev/cu.usbserial-1410' #APC220
 port_serie = serial.Serial(port, 9600)
 
-"""
-Google Earth
-"""
-kml = simplekml.Kml()
-coordenades_trajectoria = []
-
-trajectoria = kml.newlinestring(name="Cansat", 
-                               description="Trajectòria cansat")
-
-trajectoria.altitudemode = simplekml.AltitudeMode.absolute #relativetoground
-trajectoria.style.linestyle.width = 3
-trajectoria.style.linestyle.color = simplekml.Color.red
-trajectoria.extrude = 1
-#trajectoria.polystyle.fill = 0
-trajectoria.polystyle.color = simplekml.Color.hexa("ff000050")
-trajectoria.linestyle.gxlabelvisibility = 1
-
-altitud_anterior_formula = 0
-altitud_anterior_bmp280 = 0
-velocitat_formula = 0
-velocitat_bmp280 = 0
-temperatura_model_teoric = 0
-temperatura_model_experimental = 0
-
 if(port_serie.is_open):
     print(f"Connexió establerta a {port_serie.name}")
     with open(nom_fitxer_calculs, 'a') as file_object:
@@ -72,10 +46,6 @@ if(port_serie.is_open):
     
     with open(nom_fitxer_sensors, 'a') as file_object:
         file_object.write("Paquet, Temps cansat, Equip, Lectura termistor, Pressió, Altitud BMP280, Temperatura BMP280, Lectura IR\n")
-    
-    with open(nom_fitxer_gps, 'a') as file_object:
-        file_object.write(f"Dia,Hora,Longitud,Latitud,Altitud,Velocitat\n")
-    
 
     print("Esperant dades:")
 
@@ -86,6 +56,9 @@ while True:
         lectura = lectura.rstrip("\r\n'")    
         print(lectura)
     
+        with open(nom_fitxer_sensors, 'a') as file_object:
+            file_object.write(f"{lectura}\n")
+
         dades = lectura.split(',')
         
         # Guardam dades en variables
@@ -98,25 +71,9 @@ while True:
         temperatura_bmp280 = float(dades[6])
         lectura_ir = int(dades[7])
 
-        with open(nom_fitxer_sensors, 'a') as file_object:
-            file_object.write(f"{num_paquet},{temps_cansat},{nom_equip},{lectura_termistor},{pressio},{altitud_bmp280},{temperatura_bmp280},{lectura_ir}\n")
-
-        if len(dades) > 8:
-            dia = dades[8]
-            hora = dades[9]
-            latitud = float(dades[10])
-            longitud = float(dades[11])
-            altitud_gps = float(dades[12])
-            velocitat_horitzontal_gps = float(dades[13]) #km/h
-
-            with open(nom_fitxer_gps, 'a') as file_object:
-                file_object.write(f"{dia},{hora},{latitud},{longitud},{altitud_gps},{velocitat_horitzontal_gps}\n")
-
-            coordenades_trajectoria.append((longitud,latitud,altitud_gps))
-            trajectoria.coords = coordenades_trajectoria
-            kml.save(nom_fitxer_google_earth)
 
         #Calculam altura amb fórmula de pressió
+        altitud_formula = h0 + (math.log(p0/pressio)*R_AST*t0)/(G*M_MOLAR)
         altitud_formula = h0 + (math.log(p0/pressio)*R_AST*t0)/(G*M_MOLAR)
 
         #Càlcul velocitat a partir altura
@@ -138,7 +95,9 @@ while True:
 
 
         with open(nom_fitxer_calculs, 'a') as file_object:
-            file_object.write(f"{num_paquet},{temps_cansat},{nom_equip},{pressio},{altitud_bmp280},{round(altitud_formula,2)},{round(velocitat_bmp280,2)},{velocitat_formula},{lectura_termistor},{temperatura_model_teoric},{round(temperatura_model_experimental)},{temperatura_bmp280}\n")
+            entrada = f"{num_paquet},{temps_cansat},{nom_equip},{pressio},{altitud_bmp280},{round(altitud_formula,2)},{round(velocitat_bmp280,2)},{velocitat_formula},{lectura_termistor},{temperatura_model_teoric},{round(temperatura_model_experimental)},{temperatura_bmp280}\n"
+            print(entrada)
+            file_object.write(entrada)
         
 port_serie.close() # Tanca el port
 

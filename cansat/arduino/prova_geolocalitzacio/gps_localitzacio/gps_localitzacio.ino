@@ -21,14 +21,8 @@ void loop() {
   while (ss.available() > 0) {
     if (gps.encode(ss.read())) {
       Serial.print(num_paquet);
-      Serial.print(",");
-      if (gps.location.isValid()) {
-        Serial.print(gps.location.lat(), 6);
-        Serial.print(F(","));
-        Serial.print(gps.location.lng(), 6);
-      } else {
-        Serial.print(F("INVALID LOCATION"));
-      }
+      Serial.print(F(","));
+
       if (gps.date.isValid()) {
         Serial.print(gps.date.month());
         Serial.print(F("/"));
@@ -55,9 +49,28 @@ void loop() {
       } else {
         Serial.print(F("INVALID TIME"));
       }
+
+      if (gps.location.isValid()) {
+        Serial.print(gps.location.lat(), 6);
+        Serial.print(F(","));
+        Serial.print(gps.location.lng(), 6);
+      } else {
+        Serial.print(F("INVALID LOCATION"));
+      }
+
       Serial.println();
       num_paquet++;
     }
   }
+  smartDelay(1000);
+}
 
+// This custom version of delay() ensures that the gps object
+// is being "fed".
+static void smartDelay(unsigned long ms) {
+  unsigned long start = millis();
+  do {
+    while (ss.available())
+      gps.encode(ss.read());
+  } while (millis() - start < ms);
 }
