@@ -21,11 +21,13 @@ En Windows serà COM: ho podem veure a l'administrador de dispositivius
 port ='/dev/cu.usbserial-1410' #APC220
 port_serie = serial.Serial(port, 9600)
 
+
 if(port_serie.is_open):
     print(f"Connexió establerta a {port_serie.name}")
     
     with open(nom_fitxer_sensors, 'a') as file_object:
-        file_object.write("Paquet, Temps cansat, Equip, Lectura termistor, Pressió, Altitud BMP280, Temperatura BMP280, Lectura IR\n")
+        file_object.write("Paquet, Equip, Lectura termistor, Pressió, Altitud BMP280, Temperatura BMP280\n")
+    
 
     print("Esperant dades:")
 
@@ -35,10 +37,11 @@ while True:
         lectura = lectura.decode('Ascii')
         lectura = lectura.rstrip("\r\n'")    
         print(lectura)
-
+    
+        
         with open(nom_fitxer_sensors, 'a') as file_object:
-            #file_object.write(f"{num_paquet},{temps_cansat},{nom_equip},{lectura_termistor},{pressio},{altitud_bmp280},{temperatura_bmp280},{lectura_ir}\n")
             file_object.write(f"{lectura}\n")
+        
 
 port_serie.close() # Tanca el port
 
