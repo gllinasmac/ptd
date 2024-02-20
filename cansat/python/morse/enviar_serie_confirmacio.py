@@ -17,13 +17,13 @@ BAUD_RATE = 9600 # En bits per segon
 # En Windows serà COM: Ho podem veure a l'administrador de dispositius
 # També si obrim Arduino IDE ho veurem
 
-portAPC220 = '/dev/cu.usbserial-1420'
-portArduino ='/dev/cu.usbmodem14101'
-portBluetooth = '/dev/cu.Bluetooth-Incoming-Port'
+port = '/dev/cu.usbserial-1420' #APC
+#port ='/dev/cu.usbmodem14101' #ARDUINO
+#port = '/dev/cu.Bluetooth-Incoming-Port'
 
 
 #port_serie = serial.Serial(portAPC220, BAUD_RATE)
-port_serie = serial.Serial(portArduino, BAUD_RATE)
+port_serie = serial.Serial(port, BAUD_RATE)
 #port_serie = serial.Serial(portBluetooth, BAUD_RATE)
 
 
@@ -45,24 +45,16 @@ while missatge != 'q':
     print("Esperant confirmació")
     while(port_serie.in_waiting == 0):
         pass
-    # Quan rebem el missatge de confirmació el mostram i continuam el programa.
     
-    while port_serie.in_waiting > 0: # Si el port sèrie té dades 
+    while port_serie.in_waiting > 0: # Si el port sèrie té dades significa que hem rebut un missatge
 
-        # Llegim les dades que tenim al buffer fins que trobem un bot de línia (\n\r)
         lectura = port_serie.readline() #Llegim bytes
-        #print("Dades rebudes: "+str(lectura)) #b indica que són bytes.
-        #print("----------------------------")
-
-        lectura = lectura.decode('Ascii') #Convertim a string
-        #print(f"Dades transformades en string: {lectura}") #Les comilles desapareixen després de la conversió.
-        #print("----------------------------")
-
+        lectura = lectura.decode('Ascii') #Convertim a strinG
         lectura = lectura.rstrip("\r\n'") #Llevam \r\n que representa un final de línia
+
         print("Es confirma la recepció de: "+lectura)
-        print("----------------------------")
+        print("-"*15)
    
-    
     missatge = input("Escriu el caràcter que vols enviar. (q per sortir) ")
 
 print("Adeu!")

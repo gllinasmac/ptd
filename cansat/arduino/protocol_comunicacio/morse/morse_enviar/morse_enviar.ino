@@ -79,6 +79,9 @@ void loop() {
         Serial.println("Rebut: o");
       }
     }
+  }else{
+    lectura_ir = digitalRead(PIN_IR);
+    Serial.println(lectura_ir);
   }
 
   delay(1000);
