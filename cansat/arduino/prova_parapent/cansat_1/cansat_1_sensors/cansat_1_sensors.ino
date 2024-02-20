@@ -81,29 +81,15 @@ void loop() {
   if (lectura_ir == HIGH) {
     digitalWrite(PIN_RGB_VERMELL, LOW);
     digitalWrite(PIN_RGB_VERD, LOW);
-    digitalWrite(PIN_RGB_BLAU, LOW);
+    digitalWrite(PIN_RGB_BLAU, HIGH);
   } else {
     digitalWrite(PIN_RGB_VERMELL, LOW);
     digitalWrite(PIN_RGB_VERD, HIGH);
     digitalWrite(PIN_RGB_BLAU, LOW);
   }
-  
+
   tone(PIN_BRUNZIDOR,FREQ_BRUNZIDOR);
   delay(TEMPS_ENTRE_DADES/2);
   noTone(PIN_BRUNZIDOR);
   delay(TEMPS_ENTRE_DADES/2);
-}
-
-
-
-
-
-// This custom version of delay() ensures that the gps object
-// is being "fed".
-static void smartDelay(unsigned long ms) {
-  unsigned long start = millis();
-  do {
-    while (ss.available())
-      gps.encode(ss.read());
-  } while (millis() - start < ms);
 }
