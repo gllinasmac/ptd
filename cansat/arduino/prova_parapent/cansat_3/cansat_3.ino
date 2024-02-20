@@ -1,8 +1,6 @@
 #include <Wire.h>
 #include <SPI.h>
 #include <Adafruit_BMP280.h>
-#include <TinyGPSPlus.h>
-#include <DHT11.h>
 
 const int BAUDS_PER_SEGON = 9600;    //Baud = nombre de símbols (9600 = 9600 símbols enviats cada segon)
 const int TEMPS_ENTRE_DADES = 1000;  //Delay entre el final en ms
