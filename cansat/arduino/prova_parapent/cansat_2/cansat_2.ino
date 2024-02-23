@@ -41,6 +41,7 @@ void loop() {
   int lectura_uv = analogRead(A0); // 20 = estàndard
   int lectura_mq135 = analogRead(PIN_MQ135);
   int lectura_termistor = analogRead(PIN_TERMISTOR);
+  
   float pressio = bmp.readPressure();
   float temperatura_bmp280 = bmp.readTemperature();
 

@@ -16,13 +16,28 @@ senyal_iniciat = False
 senyal_acabat = False
 
 comptador_senyals_ir = 0
-
 MINIM_SENYALS_RETXA = 5 #Si rebem més 1's és una retxa
+
+SENYAL_INICI_COMUNICACIO = 'x'
 
 missatge = []
 
 if(port_serie.is_open):
     print(f"Connexió establerta a {port_serie.name}")
+    print(f"Enviam el caràcter {SENYAL_INICI_COMUNICACIO}, esperam confirmació.")
+
+
+while(port_serie.in_waiting == 0):
+    pass
+
+while port_serie.in_waiting > 0: # Si el port sèrie té dades significa que hem rebut un missatge
+
+    lectura = port_serie.readline() #Llegim bytes
+    lectura = lectura.decode('Ascii') #Convertim a strinG
+    lectura = lectura.rstrip("\r\n'") #Llevam \r\n que representa un final de línia
+
+    print("Es confirma la recepció de: "+lectura)
+    print("TENIM COMUNICACIÓ AMB EL CANSAT!!")
 
 while True:
 

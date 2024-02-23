@@ -5,18 +5,18 @@ import math
 """
 Dades càlcul altura
 """
-h0 = 0 #altura on ens trobam
-p0 = 101325 # pressió a l'altura on ens trobam del dia
-t0 = 21 # temperatura del dia
+h0 = 0.0 #altura on ens trobam
+p0 = 101325.0 # pressió a l'altura on ens trobam del dia
+t0 = 21.0 # temperatura del dia
 R_AST = 8.3144598 # constant dels gasos ideals
 M_MOLAR = 0.0289644 # massa molar aire
 G = 9.80668 # gravetat
 """
 Dades càlcul temperatura
 """
-VCC = 5 # Voltatge
-R_AUX = 10000 #Resistència auxiliar
-BETA = 3950 #Constant del termistir
+VCC = 5.0 # Voltatge
+R_AUX = 10000.0 #Resistència auxiliar
+BETA = 3950.0 #Constant del termistir
 T0 = 298.15 #Kelvin
 """
 Fitxer de text
@@ -38,6 +38,13 @@ En Windows serà COM: ho podem veure a l'administrador de dispositivius
 #port ='/dev/cu.usbmodem14101' #Arduino
 port ='/dev/cu.usbserial-1410' #APC220
 port_serie = serial.Serial(port, 9600)
+
+altitud_anterior_formula = 0
+altitud_anterior_bmp280 = 0
+velocitat_formula = 0
+velocitat_bmp280 = 0
+temperatura_model_teoric = 0
+temperatura_model_experimental = 0
 
 if(port_serie.is_open):
     print(f"Connexió establerta a {port_serie.name}")
@@ -73,7 +80,6 @@ while True:
 
 
         #Calculam altura amb fórmula de pressió
-        altitud_formula = h0 + (math.log(p0/pressio)*R_AST*t0)/(G*M_MOLAR)
         altitud_formula = h0 + (math.log(p0/pressio)*R_AST*t0)/(G*M_MOLAR)
 
         #Càlcul velocitat a partir altura

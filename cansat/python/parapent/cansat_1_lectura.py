@@ -24,7 +24,7 @@ port_serie = serial.Serial(port, 9600)
 if(port_serie.is_open):
     print(f"Connexió establerta a {port_serie.name}")
     
-    with open(nom_fitxer_sensors, 'a') as file_object:
+    with open(nom_fitxer_sensors, 'w') as file_object: #a afegeix al final i w sobreescriu el fitxer
         file_object.write("Paquet, Temps cansat, Equip, Lectura termistor, Pressió, Altitud BMP280, Temperatura BMP280, Lectura IR\n")
 
     print("Esperant dades:")

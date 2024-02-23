@@ -5,7 +5,7 @@ import math
 """
 Fitxer de text
 """
-nom_fitxer_sensors = "cansat1_sensors.csv"
+nom_fitxer_sensors = "cansat2_sensors.csv"
 
 """
 Esbrinar el nom del port USB on hi ha connectat l'APC220
@@ -25,8 +25,8 @@ port_serie = serial.Serial(port, 9600)
 if(port_serie.is_open):
     print(f"Connexió establerta a {port_serie.name}")
     
-    with open(nom_fitxer_sensors, 'a') as file_object:
-        file_object.write("Paquet, Equip, Lectura termistor, Pressió, Altitud BMP280, Temperatura BMP280, Temperatura DHT11, Humitat, Lectura MQ135, Lectura UV \n")
+    with open(nom_fitxer_sensors, 'w') as file_object: # a afegeix al final i w sobreescriu el fitxer
+        file_object.write("Paquet, Temps (ms), Equip, Lectura termistor, Pressió, Altitud BMP280, Temperatura BMP280, Temperatura DHT11, Humitat, Lectura MQ135,Diòxid de carboni, Òxid de Nitrogen, Amoníac, Lectura UV \n")
     
 
     print("Esperant dades:")
