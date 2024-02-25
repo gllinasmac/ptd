@@ -7,9 +7,11 @@ const int PIN_IR = 6;          ////Digital
 
 const char CARACTER_INICI_CONNEXIO = 'x';
 const int TEMPS_PUNT = 1000;
-const int TEMPS_RETXA = 3000;
+const int TEMPS_RETXA = 2000;
+const int TEMPS_ENTRE_SENYAL = 1000;
 
 bool connexio_terra = false;
+bool esperant_dades = true;
 
 void setup() {
   Serial.begin(9600);
@@ -33,10 +35,12 @@ void loop() {
       if (caracter == CARACTER_INICI_CONNEXIO) { //Tenim connexió i ho indicam encenent el led verd
         digitalWrite(PIN_LED_VERD, HIGH);
         connexio_terra = true;
-        Serial.println("Cansat Alicia Payne, missatge rebut. Esperam comunicació.");
+        Serial.println("Cansat Alicia Payne, missatge rebut. Esperam comunicacio.");
+      }else{
+        Serial.println("Missatge inici incorrecte");
       }
+      esperant_dades = false;
     } else { 
-      
       if (caracter == 's') {
         
         tone(PIN_BRUNZIDOR, 300);  //Encén el brunzidor a 100 Hz durant 1000 ms
@@ -44,18 +48,23 @@ void loop() {
         delay(TEMPS_PUNT);
         noTone(PIN_BRUNZIDOR); //Atura el brunzidor
         digitalWrite(PIN_LED_VERMELL, LOW);
-
+        
+        delay(TEMPS_ENTRE_SENYAL);
+      
         tone(PIN_BRUNZIDOR, 300);  //Encén el brunzidor a 100 Hz durant 1000 ms
+        digitalWrite(PIN_LED_VERMELL, HIGH);
         delay(TEMPS_PUNT);
         noTone(PIN_BRUNZIDOR); //Atura el brunzidor
         digitalWrite(PIN_LED_VERMELL, LOW);
 
+        delay(TEMPS_ENTRE_SENYAL);
+
         tone(PIN_BRUNZIDOR, 300);  //Encén el brunzidor a 100 Hz durant 1000 ms
+        digitalWrite(PIN_LED_VERMELL, HIGH);
         delay(TEMPS_PUNT);
         noTone(PIN_BRUNZIDOR); //Atura el brunzidor
         digitalWrite(PIN_LED_VERMELL, LOW);
 
-        Serial.println("Rebut: s");
       }
 
       if (caracter == 'o') {
@@ -65,21 +74,26 @@ void loop() {
         delay(TEMPS_RETXA);
         noTone(PIN_BRUNZIDOR); //Atura el brunzidor
         digitalWrite(PIN_LED_VERMELL, LOW);
+        
+        delay(TEMPS_ENTRE_SENYAL);
 
         tone(PIN_BRUNZIDOR, 300);  //Encén el brunzidor a 100 Hz durant 1000 ms
+        digitalWrite(PIN_LED_VERMELL, HIGH);
         delay(TEMPS_RETXA);
         noTone(PIN_BRUNZIDOR); //Atura el brunzidor
         digitalWrite(PIN_LED_VERMELL, LOW);
+        
+        delay(TEMPS_ENTRE_SENYAL);
 
         tone(PIN_BRUNZIDOR, 300);  //Encén el brunzidor a 100 Hz durant 1000 ms
+        digitalWrite(PIN_LED_VERMELL, HIGH);
         delay(TEMPS_RETXA);
         noTone(PIN_BRUNZIDOR); //Atura el brunzidor
         digitalWrite(PIN_LED_VERMELL, LOW);
-
-        Serial.println("Rebut: o");
+        
       }
     }
   }
 
-  delay(1000);
+  delay(TEMPS_ENTRE_SENYAL);
 }
