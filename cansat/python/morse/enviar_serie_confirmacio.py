@@ -17,8 +17,8 @@ BAUD_RATE = 9600 # En bits per segon
 # En Windows serà COM: Ho podem veure a l'administrador de dispositius
 # També si obrim Arduino IDE ho veurem
 
-port = '/dev/cu.usbserial-1420' #APC
-#port ='/dev/cu.usbmodem14101' #ARDUINO
+#port = '/dev/cu.usbserial-1420' #APC
+port ='/dev/cu.usbmodem14201' #ARDUINO
 #port = '/dev/cu.Bluetooth-Incoming-Port'
 
 
@@ -35,10 +35,9 @@ missatge = input("Quin caràcter vols enviar? ")
 
 while missatge != 'q':
     print(f"Enviant el caràcter {missatge}")
+    
     missatge_bytes = missatge.encode("Ascii")
     port_serie.write(missatge_bytes)
-    
-    
     # in_waiting és una variable que guarda el nombre de bytes en el buffer
     # Les dades que rebem es guarden en el buffer fins que són llegides
     # Abans de continuar enviant esperam que l'arduino ens retorni el missatge rebut.
@@ -52,8 +51,7 @@ while missatge != 'q':
         lectura = lectura.decode('Ascii') #Convertim a strinG
         lectura = lectura.rstrip("\r\n'") #Llevam \r\n que representa un final de línia
 
-        print("Es confirma la recepció de: "+lectura)
-        print("-"*15)
+        print("Dades rebudes: "+lectura)
    
     missatge = input("Escriu el caràcter que vols enviar. (q per sortir) ")
 

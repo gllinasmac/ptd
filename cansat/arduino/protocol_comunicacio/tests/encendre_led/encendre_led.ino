@@ -20,18 +20,28 @@ void loop() {
   //Si rebem dades
   if (Serial.available() != 0) {
     char caracter = Serial.read();
-    if(caracter == "r"){
+    Serial.print("rebut el caracter ");
+    Serial.println(caracter);
+    if(caracter == 'r'){
       digitalWrite(PIN_LED_VERD, LOW);
       digitalWrite(PIN_LED_BLAU, LOW);
       digitalWrite(PIN_LED_VERMELL, HIGH);
-    }else if(caracter == "g"){
+      Serial.println("Posam el led a vermell");
+    }else if(caracter == 'g'){
       digitalWrite(PIN_LED_VERD, HIGH);
       digitalWrite(PIN_LED_BLAU, LOW);
       digitalWrite(PIN_LED_VERMELL, LOW);
-    }else if(caracter == "v"){
+      Serial.println("Posam el led a verd");
+    }else if(caracter == 'b'){
       digitalWrite(PIN_LED_VERD, LOW);
       digitalWrite(PIN_LED_BLAU, HIGH);
       digitalWrite(PIN_LED_VERMELL, LOW);
+      Serial.println("Posam el led a blau");
+    }else if(caracter == 'x'){
+      digitalWrite(PIN_LED_VERD, LOW);
+      digitalWrite(PIN_LED_BLAU, LOW);
+      digitalWrite(PIN_LED_VERMELL, LOW);
+      Serial.println("Apagam");
     }
   }
 

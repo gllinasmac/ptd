@@ -5,8 +5,7 @@ from time import *
 #port = '/dev/ttyUSB0'
 #portChromebook = '/dev/ttyACM0'
 #port = '/dev/cu.usbserial-1410'
-port = '/dev/cu.usbserial-1420'
-#port ='/dev/cu.usbmodem14101' #arduino
+port ='/dev/cu.usbmodem14201' #arduino
 #portBluetooth = '/dev/cu.Bluetooth-Incoming-Port'
 
 # 9600 ha de ser la mateixa velocitat que l'arduino
@@ -15,12 +14,10 @@ port_serie = Serial(port, 9600)
 
 senyal_iniciat = False
 senyal_acabat = False
-temps_inici = 0
-temps_final = 0
 
-temps_minim_punt = 0.5
-temps_maxim_punt = 1.5
-temps_maxim_retxa = 3
+comptador_senyals_ir = 0
+
+MINIM_SENYALS_RETXA = 3 #Si rebem més 1's és una retxa
 
 missatge = []
 
@@ -38,39 +35,26 @@ while True:
     
         #print(lectura)
 
-        dada_ir = lectura
+        senyal_ir = lectura
+        #print(senyal_ir)
 
-        if dada_ir == "0" and senyal_iniciat == False:
+
+        if senyal_ir == "0":
+            comptador_senyals_ir += 1
             senyal_iniciat = True
-            senyal_acabat = False
-            temps_inici = time()
 
-        if dada_ir == "1" and senyal_iniciat == True:
+
+        if senyal_ir == "1" and senyal_iniciat == True:
             senyal_iniciat = False
-            senyal_acabat = True
-
-        if senyal_acabat == True:
-            temps_final = time()
-            temps_missatge = temps_final - temps_inici
-
-            if temps_missatge > temps_maxim_punt and temps_missatge < temps_maxim_retxa:
-                
+            
+            if comptador_senyals_ir >= MINIM_SENYALS_RETXA:
                 missatge.append("-")
-
-            if temps_missatge > temps_minim_punt and temps_missatge < temps_maxim_punt:
-                
+                print("-")
+            else:
                 missatge.append(".")
-
-            if temps_missatge < temps_minim_punt:
-                print("Massa curt")
-                missatge = []
-
-            if temps_missatge >= temps_maxim_retxa:
-                print("Massa llarg")
-                missatge = []
-
-            print(missatge)
-            senyal_acabat = False
+                print(".")
+            
+            comptador_senyals_ir = 0
 
         if len(missatge) == 3:
             print("MISSATGE DESCODIFICAT!")
@@ -80,8 +64,6 @@ while True:
                 print("O")
 
             missatge = []
-            
-
 
 
 

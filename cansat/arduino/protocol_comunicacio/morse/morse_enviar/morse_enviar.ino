@@ -26,63 +26,9 @@ void setup() {
 
 void loop() {
 
-  //Si rebem dades
-  if (Serial.available() != 0) {
-    char caracter = Serial.read();
-    if (connexio_terra == false) {
-      if (caracter == CARACTER_INICI_CONNEXIO) { //Tenim connexió i ho indicam encenent el led verd
-        digitalWrite(PIN_LED_ESPERA, HIGH);
-        connexio_terra = true;
-        Serial.println("Cansat Alicia Payne, missatge rebut. Esperam comunicació.");
-      }
-    } else { 
-      
-      if (caracter == 's') {
-        
-        tone(PIN_BRUNZIDOR, 300);  //Encén el brunzidor a 100 Hz durant 1000 ms
-        digitalWrite(PIN_LED_REBRE, HIGH);
-        delay(TEMPS_PUNT);
-        noTone(PIN_BRUNZIDOR); //Atura el brunzidor
-        digitalWrite(PIN_LED_REBRE, LOW);
-
-        tone(PIN_BRUNZIDOR, 300);  //Encén el brunzidor a 100 Hz durant 1000 ms
-        delay(TEMPS_PUNT);
-        noTone(PIN_BRUNZIDOR); //Atura el brunzidor
-        digitalWrite(PIN_LED_REBRE, LOW);
-
-        tone(PIN_BRUNZIDOR, 300);  //Encén el brunzidor a 100 Hz durant 1000 ms
-        delay(TEMPS_PUNT);
-        noTone(PIN_BRUNZIDOR); //Atura el brunzidor
-        digitalWrite(PIN_LED_REBRE, LOW);
-
-        Serial.println("Rebut: s");
-      }
-
-      if (caracter == 'o') {
-        
-        tone(PIN_BRUNZIDOR, 300);  //Encén el brunzidor a 100 Hz durant 1000 ms
-        digitalWrite(PIN_LED_REBRE, HIGH);
-        delay(TEMPS_RETXA);
-        noTone(PIN_BRUNZIDOR); //Atura el brunzidor
-        digitalWrite(PIN_LED_REBRE, LOW);
-
-        tone(PIN_BRUNZIDOR, 300);  //Encén el brunzidor a 100 Hz durant 1000 ms
-        delay(TEMPS_RETXA);
-        noTone(PIN_BRUNZIDOR); //Atura el brunzidor
-        digitalWrite(PIN_LED_REBRE, LOW);
-
-        tone(PIN_BRUNZIDOR, 300);  //Encén el brunzidor a 100 Hz durant 1000 ms
-        delay(TEMPS_RETXA);
-        noTone(PIN_BRUNZIDOR); //Atura el brunzidor
-        digitalWrite(PIN_LED_REBRE, LOW);
-
-        Serial.println("Rebut: o");
-      }
-    }
-  }else{
-    lectura_ir = digitalRead(PIN_IR);
-    Serial.println(lectura_ir);
-  }
+  
+  int lectura_ir = digitalRead(PIN_IR);
+  Serial.println(lectura_ir);
 
   delay(1000);
 }

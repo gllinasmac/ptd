@@ -25,6 +25,7 @@ missatge = []
 if(port_serie.is_open):
     print(f"Connexió establerta a {port_serie.name}")
     print(f"Enviam el caràcter {SENYAL_INICI_COMUNICACIO}, esperam confirmació.")
+    
 
 
 while(port_serie.in_waiting == 0):
