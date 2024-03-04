@@ -43,7 +43,7 @@ if(port_serie.is_open):
     print(f"Connexió establerta a {port_serie.name}")
     
     with open(nom_fitxer_gps, 'a') as file_object:
-        file_object.write(f"Dia,Hora,Longitud,Latitud,Altitud,Velocitat\n")
+        file_object.write(f"Paquet,Dia,Hora,Latitud,Longitud,Altitud,Velocitat\n")
 
     print("Esperant dades:")
 

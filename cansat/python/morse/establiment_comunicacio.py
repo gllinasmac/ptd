@@ -23,8 +23,8 @@ if(port_serie.is_open):
     missatge_bytes = missatge.encode("Ascii")
     port_serie.write(missatge_bytes)
 
-while(port_serie.in_waiting == 0):
-    pass
+    while(port_serie.in_waiting == 0):
+        pass
 
 while port_serie.in_waiting > 0: # Si el port sèrie té dades significa que hem rebut un missatge
 

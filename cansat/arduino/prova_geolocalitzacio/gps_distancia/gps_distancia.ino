@@ -56,6 +56,12 @@ void loop() {
         Serial.print(gps.location.lat(), 6);
         Serial.print(F(","));
         Serial.print(gps.location.lng(), 6);
+        Serial.print(F(","));
+        Serial.print(gps.altitude.meters(), 2);
+        Serial.print(F(","));
+        Serial.print(gps.speed.kmph(),2);
+        Serial.print(F(","));
+        
         unsigned long distancia_origen =
           (unsigned long)TinyGPSPlus::distanceBetween(
             gps.location.lat(),
@@ -73,7 +79,7 @@ void loop() {
       num_paquet++;
     }
   }
-  smartDelay(1000);
+  smartDelay(TEMPS_ENTRE_DADES);
 }
 
 // This custom version of delay() ensures that the gps object

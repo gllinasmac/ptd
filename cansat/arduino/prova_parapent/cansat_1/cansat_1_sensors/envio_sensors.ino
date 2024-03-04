@@ -2,10 +2,10 @@
 #include <SPI.h>
 #include <Adafruit_BMP280.h>
 
-const int BAUDS_PER_SEGON = 9600;    //Baud = nombre de símbols (9600 = 9600 símbols enviats cada segon)
-const int TEMPS_ENTRE_DADES = 1000;  //Delay entre el final en ms
+const int BAUDS_PER_SEGON = 9600;  
+const int TEMPS_ENTRE_DADES = 1000;
 
-const int PIN_IR = 6;  ////Digital
+const int PIN_IR = 6;
 
 const int PIN_RGB_VERMELL = 5;  //Digital
 const int PIN_RGB_BLAU = 8;     //Digital
@@ -32,19 +32,17 @@ void setup() {
   while (!Serial) delay(100);
   unsigned status;
   status = bmp.begin();
-  /*
+  
   if (!status) {
     Serial.println("Error de connexió BMP280");
     while (1) delay(10);
   }
-  */
+  
   pinMode(PIN_IR, INPUT);
   pinMode(PIN_BRUNZIDOR, OUTPUT);
   pinMode(PIN_RGB_VERMELL, OUTPUT);
   pinMode(PIN_RGB_VERD, OUTPUT);
   pinMode(PIN_RGB_BLAU, OUTPUT);
-
-  //digitalWrite(PIN_RGB_VERMELL,HIGH);
 }
 
 void loop() {
@@ -55,13 +53,12 @@ void loop() {
   int lectura_termistor = analogRead(PIN_TERMISTOR);
   float pressio = bmp.readPressure();
   float temperatura_bmp280 = bmp.readTemperature();
-  //  altitude = 44330 * (1.0 - pow(pressure / seaLevelhPa, 0.1903));
 
   float altura_bmp280 = bmp.readAltitude(PRESSIO_ALTURA_0);
 
   Serial.print(num_paquet);
   Serial.print(",");
-  Serial.print(millis());  //Milisegons
+  Serial.print(millis()); 
   Serial.print(",");
   Serial.print("Alicia Sintes");
   Serial.print(",");
@@ -78,19 +75,6 @@ void loop() {
 
   num_paquet++;
 
-  if (lectura_ir == HIGH) {
-    digitalWrite(PIN_RGB_VERMELL, LOW);
-    digitalWrite(PIN_RGB_VERD, LOW);
-    digitalWrite(PIN_RGB_BLAU, HIGH);
-  } else {
-    digitalWrite(PIN_RGB_VERMELL, LOW);
-    digitalWrite(PIN_RGB_VERD, HIGH);
-    digitalWrite(PIN_RGB_BLAU, LOW);
-  }
-  /*
-  tone(PIN_BRUNZIDOR,FREQ_BRUNZIDOR);
-  delay(TEMPS_ENTRE_DADES/2);
-  noTone(PIN_BRUNZIDOR);
-  */
-  delay(TEMPS_ENTRE_DADES/2);
+
+  delay(TEMPS_ENTRE_DADES);
 }

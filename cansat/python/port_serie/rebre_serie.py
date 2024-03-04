@@ -42,7 +42,7 @@ Escrivim el nom en aquesta variable
 """
 #port = '/dev/ttyUSB0'
 #portChromebook = '/dev/ttyACM0'
-port = '/dev/cu.usbserial-1410'
+port = '/dev/cu.usbserial-1420'
 #port ='/dev/cu.usbmodem14101' #arduino
 #portBluetooth = '/dev/cu.Bluetooth-Incoming-Port'
 

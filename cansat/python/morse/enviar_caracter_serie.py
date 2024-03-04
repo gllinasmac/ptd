@@ -18,7 +18,7 @@ BAUD_RATE = 9600 # En bits per segon
 # També si obrim Arduino IDE ho veurem
 
 #port = '/dev/cu.usbserial-1420' #APC
-port ='/dev/cu.usbmodem14201' #ARDUINO
+port ='/dev/cu.usbmodem14101' #ARDUINO
 #port = '/dev/cu.Bluetooth-Incoming-Port'
 
 

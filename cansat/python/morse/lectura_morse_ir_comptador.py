@@ -5,7 +5,7 @@ from time import *
 #port = '/dev/ttyUSB0'
 #portChromebook = '/dev/ttyACM0'
 #port = '/dev/cu.usbserial-1410'
-port ='/dev/cu.usbmodem14201' #arduino
+port ='/dev/cu.usbmodem14101' #arduino
 #portBluetooth = '/dev/cu.Bluetooth-Incoming-Port'
 
 # 9600 ha de ser la mateixa velocitat que l'arduino

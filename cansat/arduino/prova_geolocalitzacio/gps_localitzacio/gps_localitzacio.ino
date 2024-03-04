@@ -50,10 +50,16 @@ void loop() {
         Serial.print(F("INVALID TIME"));
       }
 
+      Serial.print(F(","));
+    
       if (gps.location.isValid()) {
         Serial.print(gps.location.lat(), 6);
         Serial.print(F(","));
         Serial.print(gps.location.lng(), 6);
+        Serial.print(F(","));
+        Serial.print(gps.altitude.meters(), 2);
+        Serial.print(F(","));
+        Serial.print(gps.speed.kmph(),2);
       } else {
         Serial.print(F("INVALID LOCATION"));
       }
@@ -62,7 +68,7 @@ void loop() {
       num_paquet++;
     }
   }
-  smartDelay(1000);
+  smartDelay(5000);
 }
 
 // This custom version of delay() ensures that the gps object
