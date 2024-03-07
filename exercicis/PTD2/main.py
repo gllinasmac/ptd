@@ -19,3 +19,5 @@ while comensaJoc == True:
         joc(rondes)
 
 #faig un canvi
+        
+#faig un altre canvi
