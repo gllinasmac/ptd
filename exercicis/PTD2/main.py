@@ -21,3 +21,5 @@ while comensaJoc == True:
 #faig un canvi
         
 #faig un altre canvi
+
+#Modifico a github
