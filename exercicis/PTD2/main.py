@@ -17,3 +17,5 @@ while comensaJoc == True:
         rondes = demanarRondes() 
 
         joc(rondes)
+
+#faig un canvi
