@@ -35,3 +35,6 @@ def joc(rondes = 3):
 
 def torn():
     pass
+
+
+#hola
