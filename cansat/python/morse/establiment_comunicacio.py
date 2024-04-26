@@ -10,8 +10,8 @@ port ='/dev/cu.usbmodem14201' #arduino
 
 # 9600 ha de ser la mateixa velocitat que l'arduino
 port_serie = Serial(port, 9600)
-
 SENYAL_INICI_COMUNICACIO = 'x'
+
 
 missatge = []
 
