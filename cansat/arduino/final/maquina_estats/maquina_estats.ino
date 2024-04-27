@@ -31,7 +31,7 @@ void inicialitzar_pins();
 void inicialitzar_bmp280();
 
 //MÀQUINA ESTATS
-int estat = 7;
+int estat = 0;
 
 void actualitzar_estat();
 
@@ -39,7 +39,8 @@ void actualitzar_estat();
 char llegir_dada_serial();
 
 //Enviar dades
-const int TEMPS_ENTRE_DADES = 1000;  // Delay entre el final en ms
+const int DELAY_REPOS = 500;   // Delay quan estam en repòs
+const int DELAY_DADES = 1000;  // Delay entre dada i dada quan enviam els sensors
 int num_paquet = 0;
 void enviar_dades_sensors();
 
@@ -68,6 +69,9 @@ void encendre_led_blau();
 void apagar_led_verd();
 void apagar_led_blau();
 void apagar_led_vermell();
+
+void encendre_led_integrat();
+void apagar_led_integrat();
 
 //SENSOR IR
 const int PIN_IR = 6;  ////Digital
@@ -120,17 +124,17 @@ simbol_morse alfabet[] = {
   { 'w', { 1, 2, 2, 0, 0 } },
   { 'x', { 2, 1, 1, 2, 0 } },
   { 'y', { 2, 1, 2, 2, 0 } },
-  { 'z', { 2, 2, 1, 1, 0 } },
-  { '1', { 1, 2, 2, 2, 2 } },
-  { '2', { 1, 1, 2, 2, 2 } },
-  { '3', { 1, 1, 1, 2, 2 } },
-  { '4', { 1, 1, 1, 1, 2 } },
-  { '5', { 1, 1, 1, 1, 1 } },
-  { '6', { 2, 1, 1, 1, 1 } },
-  { '7', { 2, 2, 1, 1, 1 } },
-  { '8', { 2, 2, 2, 1, 1 } },
-  { '9', { 2, 2, 2, 2, 1 } },
-  { '0', { 2, 2, 2, 2, 2 } }
+  { 'z', { 2, 2, 1, 1, 0 } }
+  //{ '1', { 1, 2, 2, 2, 2 } },
+  //{ '2', { 1, 1, 2, 2, 2 } },
+  //{ '3', { 1, 1, 1, 2, 2 } },
+  //{ '4', { 1, 1, 1, 1, 2 } },
+  //{ '5', { 1, 1, 1, 1, 1 } },
+  //{ '6', { 2, 1, 1, 1, 1 } },
+  //{ '7', { 2, 2, 1, 1, 1 } },
+  //{ '8', { 2, 2, 2, 1, 1 } },
+  //{ '9', { 2, 2, 2, 2, 1 } },
+  //{ '0', { 2, 2, 2, 2, 2 } }
 };
 const int NUM_CARACTERS_ALFABET = sizeof(alfabet);
 
@@ -145,6 +149,8 @@ void esperar(int temps);
 void mostrar_morse(char caracter);
 
 
+const int PIN_LDR = A8;
+int llegir_ldr(int pin);
 
 void setup() {
 
@@ -152,16 +158,17 @@ void setup() {
   inicialitzar_serial();
   //inicialitzar_bmp280();
   inicialitzar_pins();
+
+  apagar_led_integrat();
 }
 
 void loop() {
-
 
   actualitzar_estat();
 
   switch (estat) {
     case 0:  //Repòs. Sense connexió a estació de terra
-      Serial.println("Cansat en repòs. Esperant ordres.");
+      Serial.println("Cansat Alicia Sintes. En repòs. Esperant ordres.");
       encendre_led_vermell();
       break;
 
@@ -171,33 +178,44 @@ void loop() {
       break;
 
     case 2:  //Localitzar
+      Serial.println("CanSat Alicia Sintes pitant a l'espera de ser localitzat.");
       pitar(PIN_BRUNZIDOR, FREQ_BRUNZIDOR, TEMPS_BRUNZIDOR);
       break;
 
     case 3:  //Enviar dades
       enviar_dades_sensors();
-      delay(TEMPS_ENTRE_DADES);
+      delay(DELAY_DADES);
       break;
 
     case 4:  //Localitzat
+      Serial.println("CanSat localitzat! Enviar ajuda.");
       encendre_led_blau();
+      encendre_led_integrat();
       break;
 
     case 5:  //Geolocalització
       enviar_geolocalitzacio();
       break;
 
-    case 6:  //Enviar morse
+    case 6:  //Enviar morse (IR)
       Serial.println(llegir_ir());
       break;
 
     case 7:  //Rebre morse
-      Serial.println("Esperant missatge: ");
-      while (Serial.available()) {
-        char caracter_rebut = llegir_dada_serial();
-        if (caracter_rebut != '\0') {
-          mostrar_morse(caracter_rebut);
-          Serial.println("Final caracter");
+      if (!Serial.available()) {
+        Serial.println("Esperant missatge per a transmetre en Morse.");
+      } else {
+
+        while (Serial.available()) {
+          Serial.print("Missatge rebut: codificant la lletra: ");
+          char caracter_rebut = llegir_dada_serial();
+          Serial.println(caracter_rebut);
+          if (caracter_rebut != '\0') {
+            mostrar_morse(caracter_rebut);
+            Serial.print("Lletra ");
+            Serial.print(caracter_rebut);
+            Serial.println(" codificada amb exit");
+          }
         }
       }
       break;
@@ -216,43 +234,33 @@ void actualitzar_estat() {
       if (cansat_localitzat()) {
         estat = 4;
       }
-      delay(1000);
+      delay(DELAY_REPOS);
       break;
     case '0':
-      Serial.println("Estat 0: Repòs sense connexió");
+
       estat = 0;
       break;
     case '1':
-      Serial.println("Estat 1. Repòs amb connexió");
       estat = 1;
       break;
-    case '2':
-      Serial.println("Estat 2. Localitzar");
+    case '2':  //Cansat Localitzat
       estat = 2;
       break;
     case '3':
-      Serial.println("Estat 3. Enviar dades");
-      estat = 3;
+      estat = 3;  // Enviam dades
       break;
-    case '4':
-      Serial.println("Estat 4. Localitzat!!");
+    case '4':  //Cansat localitzat
       estat = 4;
       break;
-    case '5':
+    case '5':  //Geolocalització
       Serial.println("Estat 5. Geolocalització");
       estat = 5;
       break;
-    case '6':
+    case '6':  //Enviar IR
       estat = 6;
-      Serial.println("Estat 6. Enviar morse");
       break;
-    case '7':
+    case '7':  //Rebem missatges morse
       estat = 7;
-      Serial.println("Estat 7. Rebre Morse");
-
-
-
-
       break;
     default:
       Serial.print("S'ha rebut: ");
@@ -408,37 +416,46 @@ int llegir_termistor() {
 //Variables temporals
 unsigned long temps_inici_tapat = 0;
 unsigned long temps_tapat = 0;
-const int TAPAT = 1;
-const int DESTAPAT = 0;
-bool estabaTapat = false;
+const int TAPAT = 0;
+bool estaba_tapat = false;
 bool localitzat = false;
 int num_senyals = 0;
 
-bool estaTapat() {
-  bool estaTapat = false;
-  if (llegir_ir() == TAPAT) {
-    estaTapat = true;
+bool mirar_si_esta_tapat() {
+
+  bool esta_tapat = false;
+  //int lectura = llegir_ir();
+  int lectura = llegir_ldr(PIN_LDR);
+
+  if (lectura == TAPAT) {
+    esta_tapat = true;
   } else {
-    estaTapat = false;
+    esta_tapat = false;
   }
-  return estaTapat;
+  return esta_tapat;
 }
 
 bool cansat_localitzat() {
 
-  if (estaTapat() && !estabaTapat) {  //No estaba tapat i ara sí (començam a contar)
-    estabaTapat = true;               //A la següent iteració estarà tapat
+  bool ara_tapat = mirar_si_esta_tapat();
+
+  if (ara_tapat && !estaba_tapat) {  //No estaba tapat i ara sí (començam a contar)
+    estaba_tapat = true;             //A la següent iteració estarà tapat
     temps_inici_tapat = millis();
   }
 
-  if (!estaTapat() && estabaTapat) {  //Estaba tapat i ara no
-    estabaTapat = false;              //A la següent iteració estarà destapat
+  if (!ara_tapat && estaba_tapat) {  //Estaba tapat i ara no
+    estaba_tapat = false;            //A la següent iteració estarà destapat
     temps_tapat = millis() - temps_inici_tapat;
 
     //Si el temps està entre el mínim i el màxim de la longitud de la senyal
     if ((temps_tapat > TEMPS_MIN_SENYAL) && (temps_tapat < TEMPS_MAX_SENYAL)) {
       num_senyals++;
+      //Serial.print("Senyal: ");
+      //Serial.println(num_senyals);
     }
+    //Serial.print("Temps senyal: ");
+    //Serial.println(temps_tapat);
   }
 
   if (num_senyals == NUM_SENYALS_CODI) {
@@ -447,6 +464,8 @@ bool cansat_localitzat() {
   } else {
     localitzat = false;
   }
+
+  return localitzat;
 }
 
 void esperar(int temps) {
@@ -472,7 +491,7 @@ void mostrar_retxa() {
 int cercar_caracter_alfabet(char caracter) {
   bool trobat = false;
   int i = 0;
-  
+
   while (!trobat && (i < NUM_CARACTERS_ALFABET)) {
     if (alfabet[i].simbol == caracter) {
       trobat = true;
@@ -543,4 +562,18 @@ void enviar_geolocalitzacio() {
       }
     }
   }
+}
+
+int llegir_ldr(int pin) {
+  int lectura = analogRead(pin);
+
+  return (lectura < 600 ? 1 : 0);
+}
+
+void encendre_led_integrat() {
+  digitalWrite(LED_BUILTIN, HIGH);
+}
+
+void apagar_led_integrat() {
+  digitalWrite(LED_BUILTIN, LOW);
 }
