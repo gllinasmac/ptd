@@ -1,5 +1,6 @@
 import serial
 import time
+import sys
 from datetime import datetime
 
 from v_comunicacio import *

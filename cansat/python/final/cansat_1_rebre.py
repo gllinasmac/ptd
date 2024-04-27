@@ -2,17 +2,15 @@ from llibreries import *
 from f_comunicacio import *
 from f_fitxers import *
 
-
-cansat = connectar(nom_port_cansat)
+cansat = connectar()
+    
 logs = crear_fitxer_logs()
+while True:
+    lectura = llegir_serie(cansat)
+    if lectura:
+        print(lectura)
+        guardar_dades(lectura, logs)
 
-if cansat != None:
-    while True:
-        lectura = llegir_serie(cansat)
-        if lectura != None:
-            print(lectura)
-            guardar_dades(lectura, logs)
-
-            
-            
-            
+        
+        
+        
