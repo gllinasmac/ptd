@@ -31,9 +31,12 @@ void inicialitzar_pins();
 void inicialitzar_bmp280();
 
 //MÀQUINA ESTATS
-int estat = 0;
+int estat_actual = 0;
+const int NUM_ESTATS_POSSIBLES = 10;
+char ESTATS_POSSIBLES[NUM_ESTATS_POSSIBLES] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
-void actualitzar_estat();
+void actualitzar_estat(char lectura);
+bool es_estat(char caracter);
 
 //LLEGIR DADES
 char llegir_dada_serial();
@@ -164,21 +167,21 @@ void setup() {
 
 void loop() {
 
-  actualitzar_estat();
+  char lectura = llegir_dada_serial();
+  actualitzar_estat(lectura);
 
-  switch (estat) {
+  switch (estat_actual) {
     case 0:  //Repòs. Sense connexió a estació de terra
-      Serial.println("Cansat Alicia Sintes. En repòs. Esperant ordres.");
-      encendre_led_vermell();
+      Serial.println("Cansat Alicia Sintes. En repos. Esperant ordres.");
+      //encendre_led_vermell();
       break;
 
     case 1:  //Repòs amb connexió a estació de terra
-      Serial.println("Cansat Alicia Sintes. Connexió. Esperam comunicacio.");
-      encendre_led_verd();
+      Serial.println("Cansat Alicia Sintes. Connexio establerta. Esperam comunicacio.");
       break;
 
     case 2:  //Localitzar
-      Serial.println("CanSat Alicia Sintes pitant a l'espera de ser localitzat.");
+      Serial.println("CanSat Alicia Sintes pitant a la espera de ser localitzat.");
       pitar(PIN_BRUNZIDOR, FREQ_BRUNZIDOR, TEMPS_BRUNZIDOR);
       break;
 
@@ -188,9 +191,8 @@ void loop() {
       break;
 
     case 4:  //Localitzat
-      Serial.println("CanSat localitzat! Enviar ajuda.");
+      Serial.println("CanSat localitzat. Enviar ajuda.");
       encendre_led_blau();
-      encendre_led_integrat();
       break;
 
     case 5:  //Geolocalització
@@ -198,23 +200,28 @@ void loop() {
       break;
 
     case 6:  //Enviar morse (IR)
+
       Serial.println(llegir_ir());
+      delay(DELAY_DADES);
       break;
 
     case 7:  //Rebre morse
       if (!Serial.available()) {
         Serial.println("Esperant missatge per a transmetre en Morse.");
       } else {
-
         while (Serial.available()) {
           Serial.print("Missatge rebut: codificant la lletra: ");
           char caracter_rebut = llegir_dada_serial();
           Serial.println(caracter_rebut);
           if (caracter_rebut != '\0') {
-            mostrar_morse(caracter_rebut);
-            Serial.print("Lletra ");
-            Serial.print(caracter_rebut);
-            Serial.println(" codificada amb exit");
+            if (es_estat(caracter_rebut)) {
+              actualitzar_estat(caracter_rebut);
+            } else {
+              mostrar_morse(caracter_rebut);
+              Serial.print("Lletra ");
+              Serial.print(caracter_rebut);
+              Serial.println(" codificada amb exit");
+            }
           }
         }
       }
@@ -225,45 +232,56 @@ void loop() {
   }
 }
 
+bool es_estat(char caracter) {
+  bool estat = false;
+  for (int i = 0; i < NUM_ESTATS_POSSIBLES; i++) {
+    if (ESTATS_POSSIBLES[i] == caracter) {
+      estat = true;
+    }
+  }
+  return estat;
+}
 
-void actualitzar_estat() {
-  char lectura = llegir_dada_serial();
+void actualitzar_estat(char lectura) {
 
   switch (lectura) {
     case '\0':
       if (cansat_localitzat()) {
-        estat = 4;
+        estat_actual = 4;
       }
       delay(DELAY_REPOS);
       break;
     case '0':
-
-      estat = 0;
+      Serial.println("Entram en mode repos.")
+      estat_actual = 0;
       break;
     case '1':
-      estat = 1;
+      Serial.println("Entram en mode connexio establerta")
+      estat_actual = 1;
       break;
-    case '2':  //Cansat Localitzat
-      estat = 2;
+    case '2':  //Mode localitzar
+      Serial.println("Entram en mode localitzar.")
+      estat_actual = 2;
       break;
     case '3':
-      estat = 3;  // Enviam dades
+      estat_actual = 3;  // Enviam dades
+      Serial.println("Iniciam transmissio de dades dels sensors")
       break;
     case '4':  //Cansat localitzat
-      estat = 4;
+      estat_actual = 4;
       break;
     case '5':  //Geolocalització
-      Serial.println("Estat 5. Geolocalització");
-      estat = 5;
+      Serial.println("Estat 5. Geolocalitzacio");
+      estat_actual = 5;
       break;
     case '6':  //Enviar IR
-      estat = 6;
+      estat_actual = 6;
       break;
     case '7':  //Rebem missatges morse
-      estat = 7;
+      estat_actual = 7;
       break;
     default:
-      Serial.print("S'ha rebut: ");
+      Serial.print("Rebut: ");
       Serial.println(lectura);
   }
 }
@@ -281,7 +299,7 @@ static void smartDelay(unsigned long ms) {
 void inicialitzar_bmp280() {
   unsigned status = bmp.begin();
   if (!status) {
-    Serial.println("Error de connexió BMP280");
+    Serial.println("Error de connexio BMP280");
     while (1)
       delay(10);
   }
