@@ -42,7 +42,7 @@ bool es_estat(char caracter);
 char llegir_dada_serial();
 
 //Enviar dades
-const int DELAY_REPOS = 500;   // Delay quan estam en repòs
+const int DELAY_REPOS = 3000;  // Delay quan estam en repòs
 const int DELAY_DADES = 1000;  // Delay entre dada i dada quan enviam els sensors
 int num_paquet = 0;
 void enviar_dades_sensors();
@@ -54,7 +54,7 @@ int llegir_termistor();
 //Brunzidor
 const int PIN_BRUNZIDOR = 11;  // Digital
 const int FREQ_BRUNZIDOR = 400;
-const int TEMPS_BRUNZIDOR = 1000;
+const int TEMPS_BRUNZIDOR = 500;
 
 void pitar(int pin, int freq, int temps);
 
@@ -81,11 +81,12 @@ const int PIN_IR = 6;  ////Digital
 
 //Codi localització
 int NUM_SENYALS_CODI = 2;
-int TEMPS_MIN_SENYAL = 2000;
+int TEMPS_MIN_SENYAL = 1000;
 int TEMPS_MAX_SENYAL = 4000;
 
 int llegir_ir();
-bool cansat_localitzat();
+void mirar_si_localitzat();
+bool localitzat = false;
 
 
 
@@ -127,17 +128,17 @@ simbol_morse alfabet[] = {
   { 'w', { 1, 2, 2, 0, 0 } },
   { 'x', { 2, 1, 1, 2, 0 } },
   { 'y', { 2, 1, 2, 2, 0 } },
-  { 'z', { 2, 2, 1, 1, 0 } }
-  //{ '1', { 1, 2, 2, 2, 2 } },
-  //{ '2', { 1, 1, 2, 2, 2 } },
-  //{ '3', { 1, 1, 1, 2, 2 } },
-  //{ '4', { 1, 1, 1, 1, 2 } },
-  //{ '5', { 1, 1, 1, 1, 1 } },
-  //{ '6', { 2, 1, 1, 1, 1 } },
-  //{ '7', { 2, 2, 1, 1, 1 } },
-  //{ '8', { 2, 2, 2, 1, 1 } },
-  //{ '9', { 2, 2, 2, 2, 1 } },
-  //{ '0', { 2, 2, 2, 2, 2 } }
+  { 'z', { 2, 2, 1, 1, 0 } },
+  { '1', { 1, 2, 2, 2, 2 } },
+  { '2', { 1, 1, 2, 2, 2 } },
+  { '3', { 1, 1, 1, 2, 2 } },
+  { '4', { 1, 1, 1, 1, 2 } },
+  { '5', { 1, 1, 1, 1, 1 } },
+  { '6', { 2, 1, 1, 1, 1 } },
+  { '7', { 2, 2, 1, 1, 1 } },
+  { '8', { 2, 2, 2, 1, 1 } },
+  { '9', { 2, 2, 2, 2, 1 } },
+  { '0', { 2, 2, 2, 2, 2 } }
 };
 const int NUM_CARACTERS_ALFABET = sizeof(alfabet);
 
@@ -171,46 +172,62 @@ void loop() {
   actualitzar_estat(lectura);
 
   switch (estat_actual) {
+
     case 0:  //Repòs. Sense connexió a estació de terra
+      Serial.print("0/");
       Serial.println("Cansat Alicia Sintes. En repos. Esperant ordres.");
       //encendre_led_vermell();
+      delay(DELAY_REPOS);
       break;
 
     case 1:  //Repòs amb connexió a estació de terra
-      Serial.println("Cansat Alicia Sintes. Connexio establerta. Esperam comunicacio.");
+      Serial.print("1/");
+      Serial.println("Cansat Alicia Sintes. Missatge rebut. Esperam ordres");
+      encendre_led_verd();
+      delay(DELAY_REPOS);
+      apagar_led_verd();
+      estat_actual = 0;
       break;
 
     case 2:  //Localitzar
-      Serial.println("CanSat Alicia Sintes pitant a la espera de ser localitzat.");
-      pitar(PIN_BRUNZIDOR, FREQ_BRUNZIDOR, TEMPS_BRUNZIDOR);
+
+      mirar_si_localitzat();
+      if (localitzat) {
+        Serial.print("2/");
+        Serial.println("CanSat localitzat. Enviar ajuda.");
+        encendre_led_blau();
+        delay(DELAY_REPOS);
+
+      } else {
+        Serial.print("2/");
+        Serial.println("CanSat Alicia Sintes pitant a la espera de ser localitzat.");
+        pitar(PIN_BRUNZIDOR, FREQ_BRUNZIDOR, TEMPS_BRUNZIDOR);
+      }
       break;
 
     case 3:  //Enviar dades
+      Serial.print("3/");
       enviar_dades_sensors();
+      //enviar_geolocalitzacio();
       delay(DELAY_DADES);
       break;
 
-    case 4:  //Localitzat
-      Serial.println("CanSat localitzat. Enviar ajuda.");
-      encendre_led_blau();
-      break;
-
-    case 5:  //Geolocalització
-      enviar_geolocalitzacio();
-      break;
-
-    case 6:  //Enviar morse (IR)
-
+    case 4:  //Enviar morse (IR)
+      Serial.print("4/");
       Serial.println(llegir_ir());
       delay(DELAY_DADES);
       break;
 
-    case 7:  //Rebre morse
+    case 5:  //Rebre morse
+
       if (!Serial.available()) {
+        Serial.print("5/");
         Serial.println("Esperant missatge per a transmetre en Morse.");
+        delay(DELAY_REPOS);
       } else {
         while (Serial.available()) {
-          Serial.print("Missatge rebut: codificant la lletra: ");
+          Serial.print("5/");
+          Serial.print("Codificant la lletra: ");
           char caracter_rebut = llegir_dada_serial();
           Serial.println(caracter_rebut);
           if (caracter_rebut != '\0') {
@@ -218,6 +235,7 @@ void loop() {
               actualitzar_estat(caracter_rebut);
             } else {
               mostrar_morse(caracter_rebut);
+              Serial.print("5/");
               Serial.print("Lletra ");
               Serial.print(caracter_rebut);
               Serial.println(" codificada amb exit");
@@ -225,10 +243,14 @@ void loop() {
           }
         }
       }
+
       break;
 
-    default:
-      Serial.println("Error, estat no definit");
+    case 6:  //Geolocalització
+      Serial.print("6/");
+      enviar_geolocalitzacio();
+      Serial.println();
+      break;
   }
 }
 
@@ -246,54 +268,30 @@ void actualitzar_estat(char lectura) {
 
   switch (lectura) {
     case '\0':
-      if (cansat_localitzat()) {
-        estat_actual = 4;
-      }
-      delay(DELAY_REPOS);
       break;
-    case '0':
-      Serial.println("Entram en mode repos.")
+    case '0':  //Repòs
       estat_actual = 0;
       break;
     case '1':
-      Serial.println("Entram en mode connexio establerta")
+      //Serial.println("Connexio establerta");
       estat_actual = 1;
       break;
     case '2':  //Mode localitzar
-      Serial.println("Entram en mode localitzar.")
       estat_actual = 2;
       break;
     case '3':
       estat_actual = 3;  // Enviam dades
-      Serial.println("Iniciam transmissio de dades dels sensors")
       break;
-    case '4':  //Cansat localitzat
+    case '4':  //Enviar IR
       estat_actual = 4;
       break;
-    case '5':  //Geolocalització
-      Serial.println("Estat 5. Geolocalitzacio");
+    case '5':  //Rebem missatges morse
       estat_actual = 5;
       break;
-    case '6':  //Enviar IR
+    case '6':  //Geolocalització
       estat_actual = 6;
       break;
-    case '7':  //Rebem missatges morse
-      estat_actual = 7;
-      break;
-    default:
-      Serial.print("Rebut: ");
-      Serial.println(lectura);
   }
-}
-
-// This custom version of delay() ensures that the gps object
-// is being "fed".
-static void smartDelay(unsigned long ms) {
-  unsigned long start = millis();
-  do {
-    while (ss.available())
-      gps.encode(ss.read());
-  } while (millis() - start < ms);
 }
 
 void inicialitzar_bmp280() {
@@ -356,13 +354,11 @@ void enviar_dades_sensors() {
   float altura_bmp280 = bmp.readAltitude(PRESSIO_ALTURA_0);
 
   //Si no llegeix bé, pot ser un nan (not a number), en aquest cas enviam un -1
-  comprobarNAN(pressio);
-  comprobarNAN(temperatura_bmp280);
-  comprobarNAN(altura_bmp280);
+  //comprobarNAN(pressio);
+  //comprobarNAN(temperatura_bmp280);
+  //comprobarNAN(altura_bmp280);
 
   Serial.print(num_paquet);
-  Serial.print(",");
-  Serial.print(millis());  // Milisegons
   Serial.print(",");
   Serial.print("Alicia Sintes");
   Serial.print(",");
@@ -370,11 +366,12 @@ void enviar_dades_sensors() {
   Serial.print(",");
   Serial.print(pressio);
   Serial.print(",");
-  Serial.print(altura_bmp280);
-  Serial.print(",");
   Serial.print(temperatura_bmp280);
   Serial.print(",");
-  Serial.println(llegir_ir());
+  Serial.print(altura_bmp280);
+  //Serial.print(",");
+  //Serial.println(llegir_ir());
+  Serial.println();
 
   num_paquet++;
 }
@@ -436,7 +433,6 @@ unsigned long temps_inici_tapat = 0;
 unsigned long temps_tapat = 0;
 const int TAPAT = 0;
 bool estaba_tapat = false;
-bool localitzat = false;
 int num_senyals = 0;
 
 bool mirar_si_esta_tapat() {
@@ -453,7 +449,7 @@ bool mirar_si_esta_tapat() {
   return esta_tapat;
 }
 
-bool cansat_localitzat() {
+void mirar_si_localitzat() {
 
   bool ara_tapat = mirar_si_esta_tapat();
 
@@ -469,21 +465,13 @@ bool cansat_localitzat() {
     //Si el temps està entre el mínim i el màxim de la longitud de la senyal
     if ((temps_tapat > TEMPS_MIN_SENYAL) && (temps_tapat < TEMPS_MAX_SENYAL)) {
       num_senyals++;
-      //Serial.print("Senyal: ");
-      //Serial.println(num_senyals);
     }
-    //Serial.print("Temps senyal: ");
-    //Serial.println(temps_tapat);
   }
 
   if (num_senyals == NUM_SENYALS_CODI) {
     localitzat = true;
     num_senyals = 0;
-  } else {
-    localitzat = false;
   }
-
-  return localitzat;
 }
 
 void esperar(int temps) {
@@ -492,7 +480,7 @@ void esperar(int temps) {
 
 void mostrar_punt() {
   encendre_led_blau();
-
+  //Serial.println("5/.");
   esperar(TEMPS_PUNT);
 
   apagar_led_blau();
@@ -501,6 +489,7 @@ void mostrar_punt() {
 void mostrar_retxa() {
   encendre_led_blau();
 
+  //Serial.println("5/-");
   esperar(TEMPS_RETXA);
 
   apagar_led_blau();
@@ -534,12 +523,11 @@ void mostrar_morse(char caracter) {
       switch (simbol_morse) {
         case 1:
           mostrar_punt();
-          Serial.println("punt");
+
           esperar(TEMPS_ESPERA_SENYAL);
           break;
         case 2:
           mostrar_retxa();
-          Serial.println("retxa");
           esperar(TEMPS_ESPERA_SENYAL);
           break;
       }
@@ -550,35 +538,59 @@ void mostrar_morse(char caracter) {
   }
 }
 
+
+void enviar_coordenades_gps() {
+
+  if (gps.location.isValid()) {
+    Serial.print(gps.location.lat(), 6);
+    Serial.print(F(","));
+    Serial.print(gps.location.lng(), 6);
+    Serial.print(F(","));
+    Serial.print(gps.altitude.meters());
+    Serial.print(F(","));
+    Serial.print(gps.speed.kmph());
+  }
+}
+
+void enviar_dia_gps() {
+  if (gps.date.isValid()) {
+    Serial.print(gps.date.month());
+    Serial.print(F("/"));
+    Serial.print(gps.date.day());
+    Serial.print(F("/"));
+    Serial.print(gps.date.year());
+  }
+}
+
+void enviar_hora_gps() {
+  if (gps.time.isValid()) {
+    if (gps.time.hour() < 10) Serial.print(F("0"));
+    Serial.print(gps.time.hour());
+    Serial.print(F(":"));
+    if (gps.time.minute() < 10) Serial.print(F("0"));
+    Serial.print(gps.time.minute());
+    Serial.print(F(":"));
+    if (gps.time.second() < 10) Serial.print(F("0"));
+    Serial.print(gps.time.second());
+    Serial.print(F("."));
+    if (gps.time.centisecond() < 10) Serial.print(F("0"));
+    Serial.print(gps.time.centisecond());
+  }
+}
+
 void enviar_geolocalitzacio() {
-  while (ss.available() > 0) {
-    if (gps.encode(ss.read())) {
-      if (gps.location.isValid()) {
-        Serial.print(",");
-        Serial.print(gps.date.day());
-        Serial.print("/");
-        Serial.print(gps.date.month());
-        Serial.print("/");
-        Serial.print(gps.date.year());
-
-        Serial.print(",");
-        Serial.print(gps.time.hour() + 1);
-        Serial.print(":");
-        Serial.print(gps.time.minute());
-        Serial.print(":");
-        Serial.print(gps.time.second());
-
-        Serial.print(",");
-
-        Serial.print(gps.location.lat(), 6);
+  if (ss.available() > 0) {
+    while (ss.available() > 0) {
+      if (gps.encode(ss.read())) {
+        enviar_dia_gps();
         Serial.print(F(","));
-        Serial.print(gps.location.lng(), 6);
-        Serial.print(",");
-        Serial.print(gps.altitude.meters());
-        Serial.print(",");
-        Serial.print(gps.speed.kmph());
+        enviar_hora_gps();
+        Serial.print(F(","));
+        enviar_coordenades_gps();
       }
     }
+  }{
+    Serial.print("No hi ha senyal GPS");
   }
 }
 

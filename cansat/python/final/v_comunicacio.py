@@ -54,3 +54,16 @@ SENYAL_REBRE_MORSE = '7'
 Codi per acabar el programa d'enviar dades
 """
 CODI_FINAL_ENVIAR = '-q'
+
+"""Caràcter que separa l'estat del missatge"""
+CARACTER_SEPARAR_MISSATGE = '/'
+
+"""Caràcter que separa les dades enviades pels sensors"""
+CARACTER_SEPARAR_DADES = ','
+
+"""Posicions que ocupen a la lectura de dades del cansat"""
+POS_NUM_PAQUET = 0
+POS_NOM_CANSAT = 1
+POS_TERMISTOR = 2
+POS_PRESSIO = 3
+POS_TEMP_BMP280 = 4

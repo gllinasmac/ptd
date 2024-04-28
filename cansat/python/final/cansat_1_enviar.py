@@ -1,20 +1,15 @@
-#from llibreries import *
-from f_comunicacio import *
+import f_comunicacio, f_generals, f_fitxers
+import v_comunicacio
 
-from v_comunicacio import *
-from v_sensors import *
+cansat = f_comunicacio.connectar(v_comunicacio.nom_port_cansat)
 
-cansat = connectar(nom_port_cansat)
+logs = f_fitxers.crear_fitxer_logs("enviar")
 
 while True:
-    missatge = input(f"Quin missatge vols enviar? (escriu {CODI_FINAL_ENVIAR} per a sortir): ")
+    f_generals.mostrar_info_estats()
 
-    if missatge == CODI_FINAL_ENVIAR:
-        break
+    missatge = f_generals.demanar_missatge()
+    
+    f_generals.mirar_si_usuari_surt(missatge)
 
-    enviar_serie(cansat, missatge)
-                    
-
-
-print("Adeu!")
-cansat.close() # Tanca el port
+    f_comunicacio.enviar_serie(cansat, missatge)

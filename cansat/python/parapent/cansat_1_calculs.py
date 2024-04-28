@@ -97,7 +97,7 @@ while True:
             Vm = VCC * lectura_termistor / 1023.0
             R = R_AUX / ((VCC / Vm)-1)
             temperatura_model_teoric = BETA / (math.log(R/R_AUX)+(BETA / T0)) - 273.15
-            temperatura_model_experimental = 0
+            temperatura_model_experimental = 73.74 - 21.06*math.log(R/1000)
 
 
         with open(nom_fitxer_calculs, 'a') as file_object:
