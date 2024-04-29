@@ -1,0 +1,1177 @@
+2024-04-29,20:48:25,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:48:28,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:48:31,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:48:34,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:48:37,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:48:40,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:48:43,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:48:46,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:48:49,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:48:52,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:48:55,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:48:58,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:49:01,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:49:04,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:49:07,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:49:10,1/Cansat Alicia Sintes. Missatge rebut. Esperam ordres
+2024-04-29,20:49:12,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:49:15,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:15,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:16,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:16,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:17,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:18,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:19,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:20,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:21,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:21,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:22,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:22,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:22,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:22,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:22,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:22,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:22,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:22,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:22,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:22,2/CanSat Alicia Sintes pitant a la espera de ser localitzanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:23,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:23,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:23,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:23,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,20:49:23,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:23,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:23,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:23,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:23,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:23,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:23,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:23,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:23,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:23,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:23,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:23,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:23,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:23,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzEnviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:24,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:25,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:26,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:27,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:28,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:29,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:30,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:31,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:32,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:33,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:34,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:35,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:36,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:37,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:38,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:39,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:40,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:41,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:41,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:41,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:41,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:41,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:41,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:41,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:41,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:41,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:41,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:41,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:41,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:41,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:41,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:42,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:42,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:42,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:42,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:42,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:42,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:42,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:42,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:42,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:42,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:42,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:42,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:42,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:42,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:43,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:43,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:43,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:43,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:43,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:43,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:43,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:43,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:43,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:43,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:44,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:45,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:46,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:47,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:48,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:49,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:50,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:51,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:52,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:53,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:54,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:55,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:56,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:57,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:58,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. En ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:49:59,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:00,2/CanSat localitzat. En ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:01,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. En ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:02,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. En ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:03,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. En ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:04,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:05,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. En ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:06,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. En ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:07,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. En ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:08,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. En ajuda.
+2024-04-29,20:50:09,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:10,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. En ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:11,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. En ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:12,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. En ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:13,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:14,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:14,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:14,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:14,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:14,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:14,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:14,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:14,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:14,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:14,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:14,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:14,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:14,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:14,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:14,2/CanSat localitzat. Enviar ajuda.
+2024-04-29,20:50:19,2/CanSat loca0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:50:22,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:50:25,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,20:50:28,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,20:50:31,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,20:50:34,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,20:50:37,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,20:50:40,5/Codificant la lletra: s
+2024-04-29,20:50:44,5/Lletra s codificada amb exit
+2024-04-29,20:50:45,5/Codificant la lletra: o
+2024-04-29,20:50:55,5/Lletra o codificada amb exit
+2024-04-29,20:50:55,5/Codificant la lletra: s
+2024-04-29,20:51:00,5/Lletra s codificada amb exit
+2024-04-29,20:51:00,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,20:51:03,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,20:51:06,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal GPS
+2024-04-29,20:51:09,6/No hi ha senyal 
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:10,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:11,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:12,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:13,6/No hi ha senyal GPS
+2024-04-29,20:51:14,6/No hi ha senyal GPS
+2024-04-29,20:51:14,6/No hi ha senyal GPS
+2024-04-29,20:51:14,6/No hi ha senyal GPS
+2024-04-29,20:51:14,6/No hi ha senyal GPS
+2024-04-29,20:51:14,6/No hi ha senyal GPS
+2024-04-29,20:51:14,6/No hi ha senyal GPS
+2024-04-29,20:51:14,6/No hi ha senyal GPS
+2024-04-29,20:51:14,6/No hi ha senyal GPS
+2024-04-29,20:51:14,6/No hi ha senyal GPS
+2024-04-29,20:51:14,6/No hi ha senyal GPS
+2024-04-29,20:51:14,6/No hi ha senyal GPS
+2024-04-29,20:51:14,6/No hi ha senyal GPS

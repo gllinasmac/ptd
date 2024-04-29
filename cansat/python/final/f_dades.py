@@ -7,13 +7,14 @@ def mostrar_dades_sensors(lectura:str, nom_fitxer):
     valors = separar_valors(lectura)
 
     num_paquet = valors[v_comunicacio.POS_NUM_PAQUET]
+
     nom_cansat = valors[v_comunicacio.POS_NOM_CANSAT]
 
     termistor = int(valors[v_comunicacio.POS_TERMISTOR])
     Vm = v_sensors.VCC * termistor / 1023.0
-    Vm - v_sensors.VCC - Vm #Si el termistor està girat
+    Vm = v_sensors.VCC - Vm #Si el termistor està girat
     R = v_sensors.R_AUX / ((v_sensors.VCC / Vm)-1)
-    temperatura_model_teoric = v_sensors.BETA / (math.log(R/v_sensors.R_AUX)+(v_sensors.BETA / v_sensors.T0)) - 273.15
+    #temperatura = v_sensors.BETA / (math.log(R/v_sensors.R_AUX)+(v_sensors.BETA / v_sensors.T0)) - 273.15
     temperatura = 73.74 - 21.06*math.log(R/1000)
 
     pressio = valors[v_comunicacio.POS_PRESSIO]
@@ -37,12 +38,12 @@ def mostrar_dades_sensors(lectura:str, nom_fitxer):
 Cansat: {nom_cansat}
 Paquet: {num_paquet}
 Lectura termistor: {termistor}
-Voltatge: {round(Vm,2)} V
+Voltatge: {round(Vm,2)} volts
 Resistència: {round(R,2)} Ohms
 Temperatura termistor: {round(temperatura,2)} ºC
 Temperatura BMP280: {temp_bmp280} ºC
 Pressió: {pressio} Pa
-Altura pressió: {altura_pressio}"""
+Altura pressió: {altura_pressio} m"""
     
     f_generals.mostrar_missatge(missatge)
     dades = [nom_cansat, num_paquet, termistor, round(Vm,2), round(R,2), round(temperatura,2),temp_bmp280,pressio, altura_pressio]

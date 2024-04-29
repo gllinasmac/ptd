@@ -1,7 +1,7 @@
 import f_comunicacio, f_generals, f_fitxers
 import v_comunicacio
 
-cansat = f_comunicacio.connectar(v_comunicacio.nom_port_cansat)
+cansat = f_comunicacio.connectar("/dev/cu.usbserial-1420")
 
 logs = f_fitxers.crear_fitxer_logs("enviar")
 

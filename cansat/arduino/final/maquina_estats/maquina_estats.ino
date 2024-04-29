@@ -11,6 +11,10 @@
 Adafruit_BMP280 bmp;              // I2C
 float PRESSIO_ALTURA_0 = 1032.0;  // Ajustar el dia de la mesura
 float ALTURA_0 = 16;
+#define BMP_SCK (13)
+#define BMP_MISO (12)
+#define BMP_MOSI (11)
+#define BMP_CS (10)
 
 //CONNEXIÓ SÈRIE
 const int BAUDS_PER_SEGON = 9600;  // Baud = nombre de símbols (9600 = 9600 símbols enviats cada segon)
@@ -44,6 +48,7 @@ char llegir_dada_serial();
 //Enviar dades
 const int DELAY_REPOS = 3000;  // Delay quan estam en repòs
 const int DELAY_DADES = 1000;  // Delay entre dada i dada quan enviam els sensors
+const int DELAY_TEST_CONNEXIO = 2000;
 int num_paquet = 0;
 void enviar_dades_sensors();
 
@@ -54,7 +59,7 @@ int llegir_termistor();
 //Brunzidor
 const int PIN_BRUNZIDOR = 11;  // Digital
 const int FREQ_BRUNZIDOR = 400;
-const int TEMPS_BRUNZIDOR = 500;
+const int TEMPS_BRUNZIDOR = 1000;
 
 void pitar(int pin, int freq, int temps);
 
@@ -81,8 +86,8 @@ const int PIN_IR = 6;  ////Digital
 
 //Codi localització
 int NUM_SENYALS_CODI = 2;
-int TEMPS_MIN_SENYAL = 1000;
-int TEMPS_MAX_SENYAL = 4000;
+int TEMPS_MIN_SENYAL = 500;
+int TEMPS_MAX_SENYAL = 5000;
 
 int llegir_ir();
 void mirar_si_localitzat();
@@ -153,17 +158,15 @@ void esperar(int temps);
 void mostrar_morse(char caracter);
 
 
-const int PIN_LDR = A8;
+//const int PIN_LDR = A8;
 int llegir_ldr(int pin);
 
 void setup() {
 
-  inicialitzar_gps();
   inicialitzar_serial();
-  //inicialitzar_bmp280();
+  inicialitzar_gps();
+  inicialitzar_bmp280();
   inicialitzar_pins();
-
-  apagar_led_integrat();
 }
 
 void loop() {
@@ -184,25 +187,34 @@ void loop() {
       Serial.print("1/");
       Serial.println("Cansat Alicia Sintes. Missatge rebut. Esperam ordres");
       encendre_led_verd();
-      delay(DELAY_REPOS);
+      pitar(PIN_BRUNZIDOR, FREQ_BRUNZIDOR, DELAY_TEST_CONNEXIO);
+      //delay(DELAY_REPOS);
       apagar_led_verd();
       estat_actual = 0;
       break;
 
     case 2:  //Localitzar
 
-      mirar_si_localitzat();
       if (localitzat) {
         Serial.print("2/");
         Serial.println("CanSat localitzat. Enviar ajuda.");
-        encendre_led_blau();
-        delay(DELAY_REPOS);
-
+        noTone(PIN_BRUNZIDOR);
+        apagar_led_vermell();
+        encendre_led_verd();
+        //delay(DELAY_REPOS);
       } else {
         Serial.print("2/");
         Serial.println("CanSat Alicia Sintes pitant a la espera de ser localitzat.");
-        pitar(PIN_BRUNZIDOR, FREQ_BRUNZIDOR, TEMPS_BRUNZIDOR);
+        //encendre_led_vermell();
+        //tone(PIN_BRUNZIDOR, FREQ_BRUNZIDOR);
+        //pitar(PIN_BRUNZIDOR, FREQ_BRUNZIDOR, TEMPS_BRUNZIDOR);
+        //delay(TEMPS_BRUNZIDOR);
+        //apagar_led_vermell();
+
+        mirar_si_localitzat();
+        //localitzat = !llegir_ir();
       }
+      delay(DELAY_DADES);
       break;
 
     case 3:  //Enviar dades
@@ -225,6 +237,7 @@ void loop() {
         Serial.println("Esperant missatge per a transmetre en Morse.");
         delay(DELAY_REPOS);
       } else {
+
         while (Serial.available()) {
           Serial.print("5/");
           Serial.print("Codificant la lletra: ");
@@ -247,9 +260,7 @@ void loop() {
       break;
 
     case 6:  //Geolocalització
-      Serial.print("6/");
       enviar_geolocalitzacio();
-      Serial.println();
       break;
   }
 }
@@ -267,7 +278,7 @@ bool es_estat(char caracter) {
 void actualitzar_estat(char lectura) {
 
   switch (lectura) {
-    case '\0':
+    case '\0': //No he rebut res
       break;
     case '0':  //Repòs
       estat_actual = 0;
@@ -277,6 +288,9 @@ void actualitzar_estat(char lectura) {
       estat_actual = 1;
       break;
     case '2':  //Mode localitzar
+      tone(PIN_BRUNZIDOR, FREQ_BRUNZIDOR);
+      encendre_led_vermell();
+      localitzat = false;
       estat_actual = 2;
       break;
     case '3':
@@ -301,6 +315,11 @@ void inicialitzar_bmp280() {
     while (1)
       delay(10);
   }
+  bmp.setSampling(Adafruit_BMP280::MODE_NORMAL,     /* Operating Mode. */
+                  Adafruit_BMP280::SAMPLING_X2,     /* Temp. oversampling */
+                  Adafruit_BMP280::SAMPLING_X16,    /* Pressure oversampling */
+                  Adafruit_BMP280::FILTER_X16,      /* Filtering. */
+                  Adafruit_BMP280::STANDBY_MS_500); /* Standby time. */
 }
 
 void inicialitzar_pins() {
@@ -438,15 +457,10 @@ int num_senyals = 0;
 bool mirar_si_esta_tapat() {
 
   bool esta_tapat = false;
-  //int lectura = llegir_ir();
-  int lectura = llegir_ldr(PIN_LDR);
+  int lectura = llegir_ir();
+  //int lectura = llegir_ldr(PIN_LDR);
 
-  if (lectura == TAPAT) {
-    esta_tapat = true;
-  } else {
-    esta_tapat = false;
-  }
-  return esta_tapat;
+  return lectura == TAPAT;
 }
 
 void mirar_si_localitzat() {
@@ -461,17 +475,19 @@ void mirar_si_localitzat() {
   if (!ara_tapat && estaba_tapat) {  //Estaba tapat i ara no
     estaba_tapat = false;            //A la següent iteració estarà destapat
     temps_tapat = millis() - temps_inici_tapat;
-
     //Si el temps està entre el mínim i el màxim de la longitud de la senyal
     if ((temps_tapat > TEMPS_MIN_SENYAL) && (temps_tapat < TEMPS_MAX_SENYAL)) {
-      num_senyals++;
+      localitzat = true;
     }
   }
-
-  if (num_senyals == NUM_SENYALS_CODI) {
+  /*
+  if (num_senyals >= NUM_SENYALS_CODI) {
     localitzat = true;
     num_senyals = 0;
   }
+  */
+
+
 }
 
 void esperar(int temps) {
@@ -534,7 +550,7 @@ void mostrar_morse(char caracter) {
     }
 
   } else {
-    Serial.println("No s'ha trobat a l'alfabet");
+    Serial.println("5/No s'ha trobat a l'alfabet");
   }
 }
 
@@ -582,17 +598,21 @@ void enviar_geolocalitzacio() {
   if (ss.available() > 0) {
     while (ss.available() > 0) {
       if (gps.encode(ss.read())) {
+        Serial.print("6/");
         enviar_dia_gps();
         Serial.print(F(","));
         enviar_hora_gps();
         Serial.print(F(","));
         enviar_coordenades_gps();
+        Serial.println();
       }
     }
-  }{
-    Serial.print("No hi ha senyal GPS");
+  }
+  {
+    Serial.println("6/No hi ha senyal GPS");
   }
 }
+
 
 int llegir_ldr(int pin) {
   int lectura = analogRead(pin);

@@ -1,0 +1,71 @@
+2024-04-29,09:57:16,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,09:57:19,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,09:57:23,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,09:57:26,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,09:57:29,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,09:57:32,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,09:57:35,1/Cansat Alicia Sintes. Missatge rebut. Esperam ordres
+2024-04-29,09:57:35,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,09:57:38,0/Cansat Alicia Sintes. En repos. Esperant ordres.
+2024-04-29,09:57:42,3/0,Alicia Sintes,484,101218.78,22.90,163.23
+2024-04-29,09:57:42,3/1,Alicia Sintes,484,101218.78,22.90,163.23
+2024-04-29,09:57:44,3/2,Alicia Sintes,484,101219.13,22.90,163.20
+2024-04-29,09:57:45,3/3,Alicia Sintes,484,101219.13,22.90,163.20
+2024-04-29,09:57:46,3/4,Alicia Sintes,484,101219.13,22.90,163.20
+2024-04-29,09:57:47,3/5,Alicia Sintes,484,101219.30,22.90,163.18
+2024-04-29,09:57:48,3/6,Alicia Sintes,484,101219.30,22.90,163.18
+2024-04-29,09:57:49,3/7,Alicia Sintes,484,101219.47,22.90,163.17
+2024-04-29,09:57:50,3/8,Alicia Sintes,484,101219.47,22.90,163.17
+2024-04-29,09:57:51,3/9,Alicia Sintes,484,101219.52,22.90,163.17
+2024-04-29,09:57:52,3/10,Alicia Sintes,484,101219.52,22.90,163.17
+2024-04-29,09:57:53,3/11,Alicia Sintes,484,101219.69,22.90,163.15
+2024-04-29,09:57:54,3/12,Alicia Sintes,484,101219.52,22.90,163.17
+2024-04-29,09:57:55,3/13,Alicia Sintes,484,101219.52,22.90,163.17
+2024-04-29,09:57:56,3/14,Alicia Sintes,484,101219.35,22.90,163.18
+2024-04-29,09:57:57,3/15,Alicia Sintes,484,101219.74,22.90,163.15
+2024-04-29,09:57:58,3/16,Alicia Sintes,484,101219.91,22.90,163.13
+2024-04-29,09:57:59,3/17,Alicia Sintes,484,101219.74,22.90,163.15
+2024-04-29,09:58:00,3/18,Alicia Sintes,484,101219.57,22.90,163.16
+2024-04-29,09:58:01,3/19,Alicia Sintes,483,101219.82,22.91,163.14
+2024-04-29,09:58:02,3/20,Alicia Sintes,483,101219.64,22.91,163.16
+2024-04-29,09:58:03,3/21,Alicia Sintes,483,101219.64,22.91,163.16
+2024-04-29,09:58:04,3/22,Alicia Sintes,484,101219.47,22.91,163.17
+2024-04-29,09:58:05,3/23,Alicia Sintes,483,101219.64,22.91,163.16
+2024-04-29,09:58:06,3/24,Alicia Sintes,483,101219.64,22.91,163.16
+2024-04-29,09:58:07,3/25,Alicia Sintes,484,101220.03,22.91,163.12
+2024-04-29,09:58:08,3/26,Alicia Sintes,484,101220.03,22.91,163.12
+2024-04-29,09:58:09,3/27,Alicia Sintes,484,101219.86,22.91,163.14
+2024-04-29,09:58:10,3/28,Alicia Sintes,484,101220.21,22.91,163.11
+2024-04-29,09:58:11,3/29,Alicia Sintes,484,101219.86,22.91,163.14
+2024-04-29,09:58:12,3/30,Alicia Sintes,484,101220.25,22.91,163.10
+2024-04-29,09:58:13,3/31,Alicia Sintes,484,101220.25,22.91,163.10
+2024-04-29,09:58:14,3/32,Alicia Sintes,484,101220.25,22.91,163.10
+2024-04-29,09:58:15,3/33,Alicia Sintes,484,101220.08,22.91,163.12
+2024-04-29,09:58:16,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,09:58:19,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,09:58:22,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,09:58:25,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,09:58:28,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,09:58:31,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,09:58:34,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,09:58:37,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,09:58:40,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,09:58:43,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,09:58:46,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,09:58:49,5/Codificant la lletra: s
+2024-04-29,09:58:53,5/Lletra s codificada amb exit
+2024-04-29,09:58:53,5/Codificant la lletra: o
+2024-04-29,09:59:04,5/Lletra o codificada amb exit
+2024-04-29,09:59:04,5/Codificant la lletra: s
+2024-04-29,09:59:08,5/Lletra s codificada amb exit
+2024-04-29,09:59:08,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,09:59:11,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,09:59:14,5/Esperant missatge per a transmetre en Morse.
+2024-04-29,09:59:18,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,09:59:18,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,09:59:18,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,09:59:20,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,09:59:20,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,09:59:21,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,09:59:22,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.
+2024-04-29,09:59:24,2/CanSat Alicia Sintes pitant a la espera de ser localitzat.

@@ -2,7 +2,8 @@ import f_comunicacio, f_fitxers, f_generals, f_dades
 import v_comunicacio
 
 
-cansat = f_comunicacio.connectar()    
+cansat = f_comunicacio.connectar("/dev/cu.usbserial-1420")
+
 fitxer_logs = f_fitxers.crear_fitxer_logs("recepcio")
 fitxer_dades = f_fitxers.crear_fitxer_dades()
 

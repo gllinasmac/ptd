@@ -9,8 +9,8 @@ Nom del port on està connectat Arduino.
 
 Mirar nom a Arduino IDE o ls /dev/cu.* en Linux
 """
-# nom_port = '/dev/cu.usbserial-1420' #APC
-nom_port_cansat = "/dev/cu.usbmodem14101"  # Arduino cable
+nom_port_cansat = '/dev/cu.usbserial-1410' #APC
+#nom_port_cansat = "/dev/cu.usbmodem14101"  # Arduino cable
 # nom_port = '/dev/cu.Bluetooth-Incoming-Port'
 
 """
